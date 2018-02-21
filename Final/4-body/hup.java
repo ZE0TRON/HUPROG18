@@ -1,7 +1,51 @@
 package huprog;
 
 public class hup {
-	public static void addChild(int data,Node temp,int[]arr,Double x,Double y) {
+	public static void setXY(Node node,int[]arr) {
+		double n = 100.0;
+		double m = 0.0;
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i]==1 || arr[i] == 3) {
+				n-=(n-m)/2;
+			}
+			if(arr[i]==2 || arr[i] == 4) {
+				m+=(n-m)/2;
+			}
+		}
+		node.x = (n+m)/2;
+		n = 100.0;
+		m = 0.0;
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i]==3 || arr[i] == 4) {
+				n-=(n-m)/2;
+			}
+			if(arr[i]==1 || arr[i] == 2) {
+				m+=(n-m)/2;
+			}
+		}
+		node.y = (n+m)/2;
+	}
+	public static double getx(Node node) {
+		double x=0;
+		if(node.one!=null) x+= node.one.data*node.one.x;
+		if(node.two!=null) x+= node.two.data*node.two.x;
+		if(node.three!=null) x+= node.three.data*node.three.x;
+		if(node.four!=null) x+= node.four.data*node.four.x;
+		x /= (node.one.data+node.two.data+node.three.data+node.four.data);
+		node.data = (node.one.data+node.two.data+node.three.data+node.four.data);
+		return x;
+	}
+	public static double gety(Node node) {
+		double y=0;
+		if(node.one!=null) y+= node.one.data*node.one.y;
+		if(node.two!=null) y+= node.two.data*node.two.y;
+		if(node.three!=null) y+= node.three.data*node.three.y;
+		if(node.four!=null) y+= node.four.data*node.four.y;
+		y /= (node.one.data+node.two.data+node.three.data+node.four.data);
+		node.data = (node.one.data+node.two.data+node.three.data+node.four.data);
+		return y;
+	}
+	public static void addChild(int data,Node temp,int[]arr,double x,double y) {
 		
 		for(int i =0;i < arr.length - 1;i++) {
 			if(arr[i] == 1) {
@@ -62,7 +106,7 @@ public class hup {
 	}
 	
 	/*
-	 * xyleri iþleyen func?
+	 * 
 	 * inputu al?
 	 * tree build?
 	 * bottom-top dyn [10][2^20] arr?
