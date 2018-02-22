@@ -1,0 +1,13 @@
+Okan okula giderken eline cebine atar ve N tane şeker olduğunu farkeder.
+Ve bu şekerlerin bir kısmını yiyip bir kısmını arkadaşlarına dağıtmaya karar verir.
+Ancak kendisi okulda çok adil bir insan olarak tanındığı için dağıtacağı her arkadaşına
+eşit sayıda şeker vermek zorundadır. Bunu kaç farklı şekilde yapabilir ?
+
+Not :
+İstediği sayıda şeker yiyebilir ve istediği sayıda arkadaşına dağıtabilir seçebilir.
+
+Input Format :
+N şeker sayısı.
+
+Output Format:
+Kaç farklı şekilde şekerleri dağıtabileceği.
