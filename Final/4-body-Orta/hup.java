@@ -27,25 +27,31 @@ public class hup {
 	}
 	public static double getx(Node node) {
 		double x=0;
-		if(node.one!=null) x+= node.one.data*node.one.x;
-		if(node.two!=null) x+= node.two.data*node.two.x;
-		if(node.three!=null) x+= node.three.data*node.three.x;
-		if(node.four!=null) x+= node.four.data*node.four.x;
-		x /= (node.one.data+node.two.data+node.three.data+node.four.data);
-		node.data = (node.one.data+node.two.data+node.three.data+node.four.data);
+		int one = 0,two = 0, three = 0,four=0;
+		if(node.one!=null) {x+= (node.one.data*node.one.x); one = node.one.data;}
+		if(node.two!=null) {x+= (node.two.data*node.two.x); two = node.two.data;}
+		if(node.three!=null) {x+= (node.three.data*node.three.x); three = node.three.data;}
+		if(node.four!=null) {x+= (node.four.data*node.four.x); four = node.four.data;}
+				
+		x /= (one+two+three+four);
+		node.x = x;
+		node.data = (one+two+three+four);
 		return x;
 	}
 	public static double gety(Node node) {
 		double y=0;
-		if(node.one!=null) y+= node.one.data*node.one.y;
-		if(node.two!=null) y+= node.two.data*node.two.y;
-		if(node.three!=null) y+= node.three.data*node.three.y;
-		if(node.four!=null) y+= node.four.data*node.four.y;
-		y /= (node.one.data+node.two.data+node.three.data+node.four.data);
-		node.data = (node.one.data+node.two.data+node.three.data+node.four.data);
+		int one = 0,two = 0, three = 0,four=0;
+		if(node.one!=null) {y+= (node.one.data*node.one.y); one = node.one.data;}
+		if(node.two!=null) {y+= (node.two.data*node.two.y); two = node.two.data;}
+		if(node.three!=null) {y+= (node.three.data*node.three.y); three = node.three.data;}
+		if(node.four!=null) {y+= (node.four.data*node.four.y); four = node.four.data;}
+				
+		y /= (one+two+three+four);
+		node.y=y;
+		node.data = (one+two+three+four);
 		return y;
 	}
-	public static void addChild(int data,Node temp,int[]arr,double x,double y) {
+	public static void addChild(int data,Node temp,int[]arr) {
 		
 		for(int i =0;i < arr.length - 1;i++) {
 			if(arr[i] == 1) {
@@ -71,46 +77,50 @@ public class hup {
 		}
 		if(arr[arr.length-1] == 1) {
 			temp.one = new Node(data);
+			setXY(temp.one,arr);
 		}
 		else if(arr[arr.length-1] == 2) {
 			temp.two = new Node(data);
+			setXY(temp.two,arr);
 		}
 		else if(arr[arr.length-1] == 3) {
 			temp.three = new Node(data);
+			setXY(temp.three,arr);
 		}
 		else if(arr[arr.length-1] == 4) {
 			temp.four = new Node(data);
+			setXY(temp.four,arr);
 		}
+	}
+	public static void traverse(Node node) {
+		if(node.data != -1) {System.out.println(node.data + " " + node.x + " " + node.y); return;}		
+		if(node.one != null) traverse(node.one);
+		if(node.two != null) traverse(node.two);
+		if(node.three != null) traverse(node.three);
+		if(node.four != null) traverse(node.four);
+		double x = getx(node);
+		double y = gety(node);
+		System.out.println(node.data + " " + x + " " + y);
 	}
 	public static void main(String[]args) {
 		
 		Node root = new Node(-1);
 		Node temp = root;
-		int arr[] = {1,1,2};
-		int arr1[] = {1,3,1,1};
-		int arr2[] = {1,3,4};
+		int arr[] = {2,4,2,1};
+		int arr1[] = {1,2,4};
+		int arr2[] = {1,3};
 		int arr3[] = {3};
-		int arr4[] = {2,2,4};
-		int arr5[] = {4,4,2};
-		addChild(10,temp,arr,1.0,1.0);
-		addChild(10,temp,arr1,1.0,1.0);
-		addChild(10,temp,arr2,1.0,1.0);
-		addChild(10,temp,arr3,1.0,1.0);
-		addChild(10,temp,arr4,1.0,1.0);
-		addChild(10,temp,arr5,1.0,1.0);
-		
-		
-		System.out.println(root.one.one.two.data);
-		
+		addChild(10,temp,arr);
+		addChild(20,temp,arr1);
+		addChild(30,temp,arr2);
+		addChild(40,temp,arr3);
+		traverse(root);
 		
 	}
 	
 	/*
 	 * 
-	 * inputu al?
-	 * tree build?
-	 * bottom-top dyn [10][2^20] arr?
-	 * print arr?
+	 * 4^12 lik max UNIQUE input
 	 * 
 	 * */
 	
