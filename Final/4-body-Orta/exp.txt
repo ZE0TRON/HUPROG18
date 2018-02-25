@@ -1,4 +1,4 @@
-Bir düzlem üzerine N tane m1...mn kütleli cisimler yerleştirilmiştir.Her bir kütle düzlem sürekli dörder eşit parçaya
+﻿Bir düzlem üzerine N tane m1...mn kütleli cisimler yerleştirilmiştir.Her bir kütle düzlem sürekli dörder eşit parçaya
 bölündüğünde son oluşan karenin merkezinde kalabilicek şekilde yerleştirilmiştir.Aynı noktada birden fazla cisim olmadığı bilinmektedir.
 Bölünerek oluşturulan her bir yeni kare düzlem aşağıdaki şekilde 1-2-3-4 sırasıyla kendi içinde ayrılmıştır.Sıra korunmak üzere büyük düzlemden
 başlanarak en küçük boş olmayan düzleme gidilmeli ve kütle merkezi bulunmalıdır.En içten en dışa kütle toplamı güncellenerek
@@ -13,3 +13,22 @@ m(g1) g1.x g1.y ...
 
 Constraints:
 1 <= n <= 2^25
+
+Example:
+Input:
+4
+10 2 1 3
+25 3 1 2 4
+20 4 2 4 2 1
+51 1 3
+Output:
+25 43.75 81.25
+25 43.75 81.25
+10 12.5 62.5
+35 34.82142857142857 75.89285714285714
+20 90.625 71.875
+20 90.625 71.875
+20 90.625 71.875
+20 90.625 71.875
+51 25.0 25.0
+106 40.625 50.64858490566038
