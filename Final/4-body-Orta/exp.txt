@@ -1,0 +1,15 @@
+Bir düzlem üzerine N tane m1...mn kütleli cisimler yerleştirilmiştir.Her bir kütle düzlem sürekli dörder eşit parçaya
+bölündüğünde son oluşan karenin merkezinde kalabilicek şekilde yerleştirilmiştir.Aynı noktada birden fazla cisim olmadığı bilinmektedir.
+Bölünerek oluşturulan her bir yeni kare düzlem aşağıdaki şekilde 1-2-3-4 sırasıyla kendi içinde ayrılmıştır.Sıra korunmak üzere büyük düzlemden
+başlanarak en küçük boş olmayan düzleme gidilmeli ve kütle merkezi bulunmalıdır.En içten en dışa kütle toplamı güncellenerek
+kütle merkezinin kütlesi x ve y koordinatları yazdırılmalıdır.
+
+
+Input:
+N satır N adet cisim.Her bir satır m1 kütle n derinlik ve a1...an her bir kare düzlemin belirttiği konum tarifi sırayla büyükten küçüğe.
+
+Output:
+m(g1) g1.x g1.y ...
+
+Constraints:
+1 <= n <= 2^25
