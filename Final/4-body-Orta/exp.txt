@@ -32,3 +32,7 @@ Output:
 20 90.625 71.875
 51 25.0 25.0
 106 40.625 50.64858490566038
+
+--JPG
+g1,m3 ü kapsayan çemberin teğet olduğu kare, onu takiben g2 nin teğet olduğu kare g3,m2 bölgesi,g4,m3+m2... devamı yarışmacıya bırakılmıştır.
+**Şekilde m1...mn numaraları göstermeliktir input sırasıyla ilgisi yoktur.
