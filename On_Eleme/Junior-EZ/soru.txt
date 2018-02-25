@@ -1,0 +1,58 @@
+
+Güneyin bulmaca çýlgýný babasý intertin þifresini deðiþtiriyor ve güneye direk þifreyi vermek yerine ipuçlarý veriyor.
+güneyin þifreyi bulmasýna yardýmcý olun.
+
+input:
+input ilk satýr N kaçtane þifre var
+sonraki satýr L(þifre uzunluðu) ve Q(ipucu sayýsý)
+sonraki Q satrýda L tanae rakam ve X(kaçtanesi doðru rakam) Y(kaçtanesin yeri doðru)  vardýr
+
+birden fazla doðru rakam varsa hiçbirinin yeri doðru deðildir
+
+
+output:
+tek bir þifre garantisi verilerek þifrenin ne olduðu
+
+
+1
+3 9
+682 1 1
+614 1 0
+206 2 0
+738 0 0
+780 1 0
+111 0 2
+291 1 0
+468 1 0
+195 0 0
+
+
+inputlarý þöyle oluþturabilriz:
+inputlarýn oluþumunda birden fazla þifre oluþcak þekilde olmamalý!!!
+bir sayý seç
+seçilen sayýya göre inputlar üret
+
+
+
+
+
+örnek input
+
+2
+3 9
+682 1 1
+614 1 0
+206 2 0
+738 0 0
+780 1 0
+111 0 2
+291 1 0
+468 1 0
+195 0 0
+3 6
+123 0 0
+123 0 0
+123 0 0
+456 0 0
+777 0 0
+989 3 0
