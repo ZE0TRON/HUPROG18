@@ -3,6 +3,7 @@ bölündüğünde son oluşan karenin merkezinde kalabilicek şekilde yerleştir
 Bölünerek oluşturulan her bir yeni kare düzlem aşağıdaki şekilde 1-2-3-4 sırasıyla kendi içinde ayrılmıştır.Sıra korunmak üzere büyük düzlemden
 başlanarak en küçük boş olmayan düzleme gidilmeli ve kütle merkezi bulunmalıdır.En içten en dışa kütle toplamı güncellenerek
 kütle merkezinin kütlesi x ve y koordinatları yazdırılmalıdır.
+**Ana düzlemin sol alt köşesi (0,0) sağ üst köşesi (100,100)'dür.
 
 
 Input:
