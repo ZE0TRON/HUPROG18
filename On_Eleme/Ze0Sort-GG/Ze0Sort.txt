@@ -1,0 +1,14 @@
+Sorting algoritmaları üzerinde deney yapan Ze0tron yeni bir şey denemeye karar verir. Verilen sayı dizisini verilen bi k
+sayısına göre şu şekilde sıralamak istemektedir. Sıralanmış dizide her sayının bir basamak değeri vardır. Bu değer en soldaki sayı için 0 dan başlayarak
+k-1 e kadar ilerler k oldugu anda tekrar sıfırdan başlar ve son elemana kadar bu şekilde değerler atanır.
+Sizden istenen her sayının basamak değerindeki basamağında bulunan rakamın sağındaki sayının basamak değerinde bulunana basamağından küçük veya eşit olmasıdır.
+
+
+Input Format :
+İlk satırda N sıralanması istenen sayı sayısı.
+İkinci satırda K sayısı.
+Üçüncü satırda N adet sayı boşluklarla ayrılmış şekilde.
+
+Output Format :
+Verilen kurala göre sıralanmış diziyi sayıların arasında boşluk olacak şekilde ekrana bastırınız. Böyle bir
+dizi elde edilemiyorsa -1 bastırınız.
