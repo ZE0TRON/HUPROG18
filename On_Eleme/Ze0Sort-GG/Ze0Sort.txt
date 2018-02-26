@@ -2,6 +2,8 @@ Sorting algoritmaları üzerinde deney yapan Ze0tron yeni bir şey denemeye kara
 sayısına göre şu şekilde sıralamak istemektedir. Sıralanmış dizide her sayının bir basamak değeri vardır. Bu değer en soldaki sayı için 0 dan başlayarak
 k-1 e kadar ilerler k oldugu anda tekrar sıfırdan başlar ve son elemana kadar bu şekilde değerler atanır.
 Sizden istenen her sayının basamak değerindeki basamağında bulunan rakamın sağındaki sayının basamak değerinde bulunana basamağından küçük veya eşit olmasıdır.
+Birden fazla olası çözüm olması halinde dizideki her sayının puanının dizideki yeri*basamakdeğeri ne eşit olduğunu düşünün.
+Puanları toplamı en fazla olan diziyi bastırınız.
 
 
 Input Format :
