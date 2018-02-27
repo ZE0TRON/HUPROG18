@@ -1,7 +1,9 @@
 N = int(input())
 hints = []
 for i in range(N):
-    sayi, rakam, yer = map(int, input().split(" "))
+    sayi, rakam, yer = input().split(" ")
+    rakam = int(rakam)
+    yer = int(yer)
     hints.append([sayi, rakam, yer])
 for i in range(1000):
     flag = True
@@ -9,9 +11,9 @@ for i in range(1000):
         counter = 0
         matched = 0
         numbers = []
-        numbers.append(str(elem[0])[0])
-        numbers.append(str(elem[0])[1])
-        numbers.append(str(elem[0])[2])
+        numbers.append(elem[0][0])
+        numbers.append(elem[0][1])
+        numbers.append(elem[0][2])
         for eleme in numbers:
             if (i < 100 and i > 9):
                 p = "0" + str(i)
