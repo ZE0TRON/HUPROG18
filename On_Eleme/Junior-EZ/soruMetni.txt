@@ -1,0 +1,43 @@
+Güney sürekli telefonuyla internette dolanıyor ve hiç ders çalışmıyor. Bu durum babasının hiç hoşuna gitmiyor.
+Hergün basit şifreler koyup azda olsa geç telefonuyla oynamaya başlasın diye internet wifi şifresini değiştiriyor.
+Şifre 3 basamaklı sayıdır.Şifreyi değiştirdikten sonra şifreyi çözmesi için birkaç ipucu bırakıyor.İpucular da
+3 basamaklı baska bir sayi ve bu sayının içinde kaç rakamın doğru ve bu doğruların kaç tanesinin yeri doğru.
+Her zaman bir şifre vardır.
+
+
+İnput Format
+İlk satırda ipucu sayısı Q var.
+Takip eden Q satırda boşluk ile ayrılmış S x y vardır. S ipucu sayısı, x kaç tanesi doğru, y doğru rakamlardan kaç
+tanesinin yeri doğru.
+
+
+Constraints
+1<= Q <= 1000
+0<=x<=y<=3
+
+Output Format
+WiFi şifresi bastırılacaktır.
+
+Sample Input
+
+5
+682 1 1
+614 1 0
+738 0 0
+780 1 0
+206 2 0
+
+Sample Output
+
+042
+
+
+Explanation
+
+682 1 1 , bir rakam ver yeri doğru
+614 1 0 , bir rakam doğru ama yeri yanlış
+738 0 0 , hiçbir şey doğru değil
+780 1 0 , bir rakam doğru ama yeri yanlış
+206 2 0 , iki rakam doğru ama yeri yanlış
+
+WiFi şifresi 042

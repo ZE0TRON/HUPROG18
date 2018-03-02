@@ -1,3 +1,10 @@
+from random import randint
+
+a= [randint(1,5) for i in range(7)]
+print(a)
+
+
+
 N = int(input())
 hints = []
 for i in range(N):
