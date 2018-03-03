@@ -1,8 +1,0 @@
-Baran kendince çok hızlı çalışan bir arama algoritması bulmuştur. Bu algoritma sıralı bir dizi üzerinde çalışmakta olup
-aşağıdaki kurallara göre arama yapmaktadır.
-Bir dizinin içindeki asal indexlere sırayla bakar aradığı değerden küçükse bir sonraki asal indexe gecer. Büyükse iki
-asal arasında kısmı yeni bir dizi gibi düşünüp tekrar indexler ve bu  dizi üzerinde aynı işlemleri aradığı değeri bulana kadar
-tekrar eder.
-Özel durum:
-Sağa doğru giderken algoritma son asal indexe rastlamışsa o indexle dizinin sonunana kadar olan kısmı yeni bir dizi gibi düşünüp
-indexler ve tekrar aynı algoritmayı uygular.

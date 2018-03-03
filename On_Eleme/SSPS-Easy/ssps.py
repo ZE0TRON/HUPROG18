@@ -15,7 +15,7 @@ def find_asals(N):
 
 
 N = int(input())
-dizi = list(map(int, input().split(" ")))
+dizi = list(map(int, input().split()))
 aranan = int(input())
 asallar = find_asals(N)
 i = 0
