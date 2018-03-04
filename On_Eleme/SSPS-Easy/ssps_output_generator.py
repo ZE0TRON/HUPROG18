@@ -20,8 +20,8 @@ a = time()
 inputs = os.listdir("./input")
 for inp in inputs:
     inputfile = open("input/" + inp, "r")
-    number = inp[5:7]
-    out = open("output/output" + number + ".txt", "w")
+    number = inp[5:]
+    out = open("output/output" + number , "w")
     print("su an " + number + " nolu outputu hazirliyorum... gecen sure: " + str(time() - a))
 
     N = int(inputfile.readline())
@@ -43,7 +43,7 @@ for inp in inputs:
             print(*dizi,file=out)
             i = -1
         i += 1
-
+    print(time()-a)
 
 
 

@@ -1,0 +1,32 @@
+Okan, Batuhan sonsuz basamaklı bir merdivenin başındadırlar. Eğlenmek için bir oyun bulurlar.Sonra eğlencesine
+kendilerine takma isimler buluyorlar Okannın adı Pro Batuhanın ki Zone. Oyun şöyle oynanmakta. Okan ve Batuhan rastgele
+sayılar üretip bir şeffaf borunun içine atıyorlar. Sonra sırayla o tüpün iki ucundan birindeki sayıyı alıp.
+Merdivenlerde sayı kadar yukarı çıkıyor. Okan olabildiğince Batuhandan uzaklaşmaya çalışıyor. Batuhan Okanın tam tersine
+Okan'a yakın durmak istiyor.
+
+
+İnput Format
+İlk satır N tane ürettikleri sayı sayısı.
+Sonraki satırda şeffaf borunun içindeki N tane sayı.
+
+
+Constraints
+1<=N<=1000???
+1<=x's<=100???
+
+Output Format
+Kim yukarda ve kaçıncı basamamakta bulunmakta. Oyun berabere biterse kim yukarda olucağına ProZone ve kaçıncı basamakta
+bulunmaktalar.
+
+Sample Input
+5
+1 2 3 2 1
+
+
+Sample Output
+5 Pro
+
+
+Explanation
+Pro,Zone,Pro,Zone,Pro
+ 1 , 2  , 3 , 2  , 1
