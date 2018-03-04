@@ -11,22 +11,32 @@ Sonraki satırda şeffaf borunun içindeki N tane sayı.
 
 
 Constraints
-1<=N<=1000???
-1<=x's<=100???
+1<=N<8000
+1<=x's<=100
 
 Output Format
 Kim yukarda ve kaçıncı basamamakta bulunmakta. Oyun berabere biterse kim yukarda olucağına ProZone ve kaçıncı basamakta
 bulunmaktalar.
 
-Sample Input
+Sample Input1
 5
 1 2 3 2 1
 
-
-Sample Output
+Sample Output1
 5 Pro
-
 
 Explanation
 Pro,Zone,Pro,Zone,Pro
  1 , 2  , 3 , 2  , 1
+
+
+Sample Input2
+4
+1 2 2 1
+
+Sample Output2
+3 ProZone
+
+Explanation
+Pro,Zone,Pro,Zone
+ 1 , 2  , 2  , 1
