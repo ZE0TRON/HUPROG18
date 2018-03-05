@@ -20,16 +20,16 @@ aranan = int(input())
 asallar = find_asals(N)
 i = 0
 while i < len(asallar):
-    if (len(dizi) <= asallar[i]):
+    if (len(dizi) <= asallar[i]-1):
         print("Not Found")
         break
-    if (dizi[asallar[i]] < aranan):
+    if (dizi[asallar[i]-1] < aranan):
         nothing = 0
-    elif (dizi[asallar[i]] == aranan):
+    elif (dizi[asallar[i]-1] == aranan):
         print("Found")
         break
     else:
-        dizi = dizi[asallar[i - 1]:asallar[i]]
+        dizi = dizi[asallar[i ]-1:asallar[i+1]-1]
         print(*dizi)
-        i = -1
+        i = 0
     i += 1

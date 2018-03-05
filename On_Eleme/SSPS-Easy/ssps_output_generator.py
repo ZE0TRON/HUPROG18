@@ -21,7 +21,7 @@ inputs = os.listdir("./input")
 for inp in inputs:
     inputfile = open("input/" + inp, "r")
     number = inp[5:]
-    out = open("output/output" + number , "w")
+    out = open("outputs/output" + number , "w+")
     print("su an " + number + " nolu outputu hazirliyorum... gecen sure: " + str(time() - a))
 
     N = int(inputfile.readline())
@@ -30,20 +30,17 @@ for inp in inputs:
     asallar = find_asals(N)
     i = 0
     while i < len(asallar):
-        if (len(dizi) <= asallar[i]):
+        if (len(dizi) <= asallar[i]-1):
             print("Not Found",file=out)
             break
-        if (dizi[asallar[i]] < aranan):
+        if (dizi[asallar[i]-1] < aranan):
             nothing = 0
-        elif (dizi[asallar[i]] == aranan):
+        elif (dizi[asallar[i]-1] == aranan):
             print("Found",file=out)
             break
         else:
-            dizi = dizi[asallar[i - 1]:asallar[i]]
+            dizi = dizi[asallar[i-1]-1:asallar[i]-1]
             print(*dizi,file=out)
-            i = -1
+            i = 1
         i += 1
     print(time()-a)
-
-
-
