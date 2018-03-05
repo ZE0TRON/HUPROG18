@@ -1,14 +1,13 @@
 Güney sürekli telefonuyla internette dolanıyor ve hiç ders çalışmıyor. Bu durum babasının hiç hoşuna gitmiyor.
-Hergün basit şifreler koyup azda olsa geç telefonuyla oynamaya başlasın diye internet wifi şifresini değiştiriyor.
-Şifre 3 basamaklı sayıdır.Şifreyi değiştirdikten sonra şifreyi çözmesi için birkaç ipucu bırakıyor.İpucular da
-3 basamaklı baska bir sayi ve bu sayının içinde kaç rakamın doğru ve bu doğruların kaç tanesinin yeri doğru.
+Her gün basit şifreler koyup az da olsa geç telefonuyla oynamaya başlasın diye internet wifi şifresini değiştiriyor.
+Şifre 3 basamaklı sayıdır.Şifreyi değiştirdikten sonra şifreyi çözmesi için birkaç ipucu bırakıyor.İpucularında da
+3 basamaklı  bir sayi ve bu sayının kaç rakamının diğer sayıda bulunduğu  ve bunlardan kaçının doğru yerde olduğu bulunuyor.
 Her zaman bir şifre vardır.
 
 
 İnput Format
 İlk satırda ipucu sayısı Q var.
-Takip eden Q satırda boşluk ile ayrılmış S x y vardır. S ipucu sayısı, x kaç tanesi doğru, y doğru rakamlardan kaç
-tanesinin yeri doğru.
+Takip eden Q satırda boşluk ile ayrılmış S x y vardır. S ipucu sayısı, x diğer sayıda da bulunan , y bulunan rakamlardan kaçının yerinin doğru olduğunu ifade eder.
 
 
 Constraints
@@ -16,28 +15,30 @@ Constraints
 0<=x<=y<=3
 
 Output Format
-WiFi şifresi bastırılacaktır.
+WiFi şifresini ekrana bastırınız.
 
 Sample Input
 
-5
-682 1 1
-614 1 0
-738 0 0
-780 1 0
-206 2 0
+6
+032 2 1
+046 1 0
+041 1 0
+541 1 0
+673 1 0
+890 0 0
 
 Sample Output
 
-042
+234
 
 
 Explanation
 
-682 1 1 , bir rakam ver yeri doğru
-614 1 0 , bir rakam doğru ama yeri yanlış
-738 0 0 , hiçbir şey doğru değil
-780 1 0 , bir rakam doğru ama yeri yanlış
-206 2 0 , iki rakam doğru ama yeri yanlış
+032 2 1 , iki rakam doğru ama yalnız birinin yeri doğru.
+046 1 0 , bir rakam doğru ama yeri yanlış.
+041 1 0 , bir rakam doğru ama yeri yanlış.
+541 1 0 , bir rakam doğru ama yeri yanlış.
+673 1 0 , bir rakam doğru ama yeri yanlış.
+890 0 0 , hiçbir şey doğru değil.
 
-WiFi şifresi 042
+WiFi şifresi 234
