@@ -1,12 +1,12 @@
-Okan, Batuhan sonsuz basamaklı bir merdivenin başındadırlar. Eğlenmek için bir oyun bulurlar.Sonra eğlencesine
-kendilerine takma isimler buluyorlar Okannın adı Pro Batuhanın ki Zone. Oyun şöyle oynanmakta. Okan ve Batuhan rastgele
-sayılar üretip bir şeffaf borunun içine atıyorlar. Sonra sırayla o tüpün iki ucundan birindeki sayıyı alıp.
-Merdivenlerde sayı kadar yukarı çıkıyor. Okan olabildiğince Batuhandan uzaklaşmaya çalışıyor. Batuhan Okanın tam tersine
+Okan ve Batu sonsuz basamaklı bir merdivenin başındadırlar. Eğlenmek için bir oyun bulurlar.Sonra eğlencesine
+kendilerine takma isimler buluyorlar Okannın takma adı Pro Batunun ki Zone oluyor. Okan ve Batuhan rastgele
+sayılar üretip bir şeffaf borunun içine atıyorlar, sonra sırayla o borunun iki ucundan birindeki sayıyı alıp ,
+merdivenlerde  bourdan aldıkları sayı kadar yukarı çıkıyorlar. Okan olabildiğince Batuhandan uzaklaşmaya çalışıyor. Batuhan Okanın tam tersine
 Okan'a yakın durmak istiyor.
 
 
 İnput Format
-İlk satır N tane ürettikleri sayı sayısı.
+İlk satır N , boru içindeki sayı sayısı.
 Sonraki satırda şeffaf borunun içindeki N tane sayı.
 
 
