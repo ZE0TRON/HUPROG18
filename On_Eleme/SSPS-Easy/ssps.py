@@ -15,7 +15,7 @@ def find_asals(N):
 
 
 N = int(input())
-dizi = list(map(int, input().split()))
+dizi = list(map(int, input().strip().split()))
 aranan = int(input())
 asallar = find_asals(N)
 i = 0
@@ -29,7 +29,7 @@ while i < len(asallar):
         print("Found")
         break
     else:
-        dizi = dizi[asallar[i ]-1:asallar[i+1]-1]
+        dizi = dizi[asallar[i-1]-1:asallar[i]-1]
         print(*dizi)
-        i = 0
+        i = 1
     i += 1

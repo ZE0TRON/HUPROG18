@@ -35,6 +35,7 @@ Sample Output
 
 Explanation
 
+6 tane ipucu var
 032 2 1 , iki rakam doğru ama yalnız birinin yeri doğru.
 046 1 0 , bir rakam doğru ama yeri yanlış.
 041 1 0 , bir rakam doğru ama yeri yanlış.
