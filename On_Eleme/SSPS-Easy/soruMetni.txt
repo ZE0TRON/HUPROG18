@@ -1,7 +1,8 @@
 Baran kendince çok hızlı çalışan bir arama algoritması bulmuştur. Bu algoritma sıralı bir dizi üzerinde çalışmakta olup
 aşağıdaki kurallara göre arama yapmaktadır.
-Bir dizinin içindeki asal indexlere sırayla bakar aradığı değerden küçükse bir sonraki asal indexe geçer. Büyükse iki
-asal arasında kalan kısmı yeni bir dizi gibi düşünüp tekrar indexler ve bu  dizi üzerinde aynı işlemleri aradığı değeri bulana kadar tekrar eder.
+Bir dizinin içindeki asal indexlere sırayla bakar aradığı değerden küçükse bir sonraki asal indexe geçer. Büyükse bir önceki
+asal index ile arasında kalan kısmı yeni bir dizi gibi düşünüp tekrar indexler ve bu  dizi üzerinde aynı işlemleri aradığı değer asal indexler arasında
+olduğu sıraca devam eder.
 Özel durum:
 Sağa doğru giderken algoritma son asal indexe rastlamışsa o indexle dizinin sonunana kadar olan kısmı yeni bir dizi gibi düşünüp indexler ve tekrar aynı algoritmayı uygular.
 
@@ -13,21 +14,48 @@ Son satırda aranan X değeri verilecektir.
 
 Constraints
 1<= N <= 275000
-1<= w <= 1800000000 / N
+1<= w <= 180 / N burayı yenile
 
 Output Format
 Arama sırasında yeniden indexlenen her bir dizinin elemanları bastırılacak.(Her bir dizi için ayrı satırda).
 Sonunda ise aranan değer dizide varsa Found aksi takdirde Not Found yazdırılacaktır.
 
 Sample Input
-50
-7294646 9932561 28619218 53498783 57477596 64029405 68592248 97255440 119457165 153290041 157527706 179062492 182206407 211405180 227524914 237234935 254297455 284335035 293716394 311870812 313121930 336317282 365480477 400093963 414768710 419940015 431161171 447189814 447271248 469524100 478555540 510904862 539815688 574811859 580344918 588578632 591090784 608112960 640966598 658741396 669537577 683544849 714512105 719976867 737543615 759110632 789132920 789368601 823510879 857252296
-447189814
+11
+1 3 5 6 10 21 32 43 56 123 125
+43
 
 
 Sample Output
-Found
-
-
+[8, 9, 10, 11]
+[]
+Not Found
 
 Explanation
+Asal indexlere bakıldığında; 3<43 geçildi. 5<43 geçildi. 10<43 geçildi. 32<43 geçildi.
+125>43 yeniden indexlenecek.
+[43,56,123,125] yeni listemiz.
+İşlemleri bu listede tekrarlıycaz. 56>43 ilk asal indexteki sayı büyük olduğu ve öncesinde başka asal index olmadığından
+dolayı
+[]
+Not Found
+
+Sample Input
+11
+0 5 7 9 10 13 15 16 18 20 32
+16
+
+
+Sample Output
+[8, 9, 10, 11]
+[]
+Not Found
+
+Explanation
+Asal indexlere bakıldığında; 3<43 geçildi. 5<43 geçildi. 10<43 geçildi. 32<43 geçildi.
+125>43 yeniden indexlenecek.
+[43,56,123,125] yeni listemiz.
+İşlemleri bu listede tekrarlıycaz. 56>43 ilk asal indexteki sayı büyük olduğu ve öncesinde başka asal index olmadığından
+dolayı
+[]
+Not Found
