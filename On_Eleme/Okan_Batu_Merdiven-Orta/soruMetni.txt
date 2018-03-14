@@ -1,7 +1,7 @@
 Okan ve Batu sonsuz basamaklı bir merdivenin başındadırlar. Eğlenmek için bir oyun bulurlar.Sonra eğlencesine
 kendilerine takma isimler buluyorlar Okannın takma adı Pro Batunun ki Zone oluyor. Okan ve Batuhan rastgele
 sayılar üretip bir şeffaf borunun içine atıyorlar, sonra sırayla o borunun iki ucundan birindeki sayıyı alıp ,
-merdivenlerde  bourdan aldıkları sayı kadar yukarı çıkıyorlar. Oyun borunun içindeki tüm sayılar bitene kadar devam
+merdivenlerde  borudan aldıkları sayı kadar yukarı çıkıyorlar. Oyun borunun içindeki tüm sayılar bitene kadar devam
 ediyor. Sayılar bittiğinde en çok yukarı çıkan kazanır. Okan ve Batu ikisi birden optimal bir şekilde oynamaktadır.
 
 
