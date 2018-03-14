@@ -22,6 +22,8 @@ for i in range(int(input())):
         print(sayi, file=out, end=" ")
         if(i == arananindex):
             aranansayi = sayi
+    if randint(0,100) < 30:
+        aranansayi+=1
     print(file=out)
     print(aranansayi, file=out)
 
