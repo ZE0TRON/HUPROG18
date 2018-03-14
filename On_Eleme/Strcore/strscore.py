@@ -1,6 +1,4 @@
-# Python program for insert and search
-# operation in a Trie
-from collections import deque
+import timeit
 
 class TrieNode:
 
@@ -79,8 +77,16 @@ class Trie:
 # driver function
 def main():
 
+    start = timeit.default_timer()
+
+
     # Input keys (use only 'a' through 'z' and lower case)
-    keys = ["arabalar", "araba", "ara", "arama", "alma", "al", "almak"]
+    #keys = ["arabalar", "araba", "ara", "arama", "alma", "al", "almak"]
+
+    inputfile = open("/home/meric/PycharmProjects/strcore/input/input1.txt", "r")
+    outfile = open("/home/meric/PycharmProjects/strcore/output/output1.txt", "w")
+    n = int(inputfile.readline().strip())
+    keys = inputfile.readline().strip().split(" ")
 
     # Trie object
     t = Trie()
@@ -94,8 +100,11 @@ def main():
 
     for key in keys:
         print("current key:" ,key, "current score ", t.calculateScore(key))
+        outfile.write(str(t.calculateScore(key)) + " ")
 
 
+    stop = timeit.default_timer()
+    print("Running time ", stop - start)
 
 if __name__ == '__main__':
     main()
