@@ -1,17 +1,18 @@
 Güney sürekli telefonuyla internette dolanıyor ve hiç ders çalışmıyor. Bu durum babasının hiç hoşuna gitmiyor.
 Her gün basit şifreler koyup az da olsa geç telefonuyla oynamaya başlasın diye internet wifi şifresini değiştiriyor.
 Şifre 3 basamaklı sayıdır.Şifreyi değiştirdikten sonra şifreyi çözmesi için birkaç ipucu bırakıyor.İpucularında da
-3 basamaklı  bir sayi ve bu sayının kaç rakamının diğer sayıda bulunduğu  ve bunlardan kaçının doğru yerde olduğu bulunuyor.
-Her zaman bir şifre vardır.
+3 basamaklı  bir sayi ve bu sayının kaç rakamının diğer sayıda bulunduğu  ve bunlardan kaçının doğru yerde olduğu
+bulunuyor. Her zaman bir şifre vardır.
 
 
 İnput Format
 İlk satırda ipucu sayısı Q var.
-Takip eden Q satırda boşluk ile ayrılmış S x y vardır. S ipucu sayısı, x diğer sayıda da bulunan , y bulunan rakamlardan kaçının yerinin doğru olduğunu ifade eder.
+Takip eden Q satırda boşluk ile ayrılmış S x y vardır. S ipucu sayısı, x ipucu sayısında bulunan kaç tane rakamın
+şifrede bulunduğunu , y bulunan rakamlardan kaçının yerinin doğru olduğunu ifade eder.
 
 
 Constraints
-1<= Q <= 1000
+1<= Q <= 15
 0<=x<=y<=3
 
 Output Format
@@ -34,6 +35,7 @@ Sample Output
 
 Explanation
 
+6 tane ipucu var
 032 2 1 , iki rakam doğru ama yalnız birinin yeri doğru.
 046 1 0 , bir rakam doğru ama yeri yanlış.
 041 1 0 , bir rakam doğru ama yeri yanlış.

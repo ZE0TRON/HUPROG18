@@ -29,5 +29,5 @@ for i in range(1000):
         if (counter != elem[1] or matched != elem[2]):
             flag = False
     if (flag):
-        print("Founnddd : ", p)
+        print(p)
         break

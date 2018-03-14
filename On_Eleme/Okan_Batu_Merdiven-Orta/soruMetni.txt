@@ -1,8 +1,8 @@
 Okan ve Batu sonsuz basamaklı bir merdivenin başındadırlar. Eğlenmek için bir oyun bulurlar.Sonra eğlencesine
 kendilerine takma isimler buluyorlar Okannın takma adı Pro Batunun ki Zone oluyor. Okan ve Batuhan rastgele
 sayılar üretip bir şeffaf borunun içine atıyorlar, sonra sırayla o borunun iki ucundan birindeki sayıyı alıp ,
-merdivenlerde  bourdan aldıkları sayı kadar yukarı çıkıyorlar. Okan olabildiğince Batuhandan uzaklaşmaya çalışıyor. Batuhan Okanın tam tersine
-Okan'a yakın durmak istiyor.
+merdivenlerde  bourdan aldıkları sayı kadar yukarı çıkıyorlar. Oyun borunun içindeki tüm sayılar bitene kadar devam
+ediyor. Sayılar bittiğinde en çok yukarı çıkan kazanır. Okan ve Batu ikisi birden optimal bir şekilde oynamaktadır.
 
 
 İnput Format
@@ -11,12 +11,12 @@ Sonraki satırda şeffaf borunun içindeki N tane sayı.
 
 
 Constraints
-1<=N<8000
+1<=N<=7777
 1<=x's<=100
 
 Output Format
-Kim yukarda ve kaçıncı basamamakta bulunmakta. Oyun berabere biterse kim yukarda olucağına ProZone ve kaçıncı basamakta
-bulunmaktalar.
+Kazanan kaçıncı basamakta ve kim kazandı şeklindedir. Oyun berabere biterse Okan ve Batu'nun kaçıncı basakmakta
+bulunduğu ve ProZone olucaktır.
 
 Sample Input1
 5

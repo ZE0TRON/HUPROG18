@@ -1,0 +1,19 @@
+
+Dilbilimci Meriç'in araştırma konusu kelimelerin matematiğidir. Dildeki kelimelerin skorlarla ifade
+edilebileceğine inanan Meriç, bu skorların mevcut dildeki kelime miktarına ve birbirleriyle olan
+ilişkilerine bağlı bir sabit olarak hesaplanabileceğine inanır. Tasarladığı modeli bitiren Meriç,
+projenin test aşamasına gelmiştir. Ona bu etapta yardımcı olabilir misiniz?
+
+Girdi:
+İlk satırda N: Verilen havuzdaki sözcük miktarı,
+Sonraki satırda boşlukla ayrılmış N adet sözcük.
+
+Sözcükler sadece alfabenin küçük harflerini içermektedir. Uzunluğunun en az 3 karakter olacağı garantilenmiştir.
+
+Çıktı:
+(????)Verilen sırayla, her sözcük için skorunu yeni satıra bastırınız.
+
+Sınırlamalar:
+(????)
+
+denemedeneme

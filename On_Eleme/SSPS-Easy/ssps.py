@@ -10,26 +10,21 @@ def find_asals(N):
             if (elem % i == 0):
                 flag = False
         if (flag == True):
-            a.append(elem - 1)
+            a.append(elem)
     return a
 
+def isPrime(n):
+    if n==2 or n==3: return True
+    if n%2==0: return False
+    for i in range(3,int(n**(1/2))+1,2):
+        if n%i==0:
+            return False
+    return True
 
-N = int(input())
-dizi = list(map(int, input().split()))
-aranan = int(input())
-asallar = find_asals(N)
-i = 0
-while i < len(asallar):
-    if (len(dizi) <= asallar[i]-1):
-        print("Not Found")
-        break
-    if (dizi[asallar[i]-1] < aranan):
-        nothing = 0
-    elif (dizi[asallar[i]-1] == aranan):
-        print("Found")
-        break
-    else:
-        dizi = dizi[asallar[i ]-1:asallar[i+1]-1]
-        print(*dizi)
-        i = 0
-    i += 1
+a=find_asals(100000)
+print(a)
+for x in a:
+    if isPrime(x):
+        continue
+    print(x)
+
