@@ -7,13 +7,13 @@ def zeroer():
 
 N = int(input())
 K = int(input())
-liste = input.split(" ")
+liste = input().split(" ")
 Tubes = []
 stack = []
 solution = []
 for i in range(K):
     Tubes.append([])
-    for i in range(10):
+    for k in range(10):
         Tubes[i].append([])
 for i in range(K):
     for elem in liste:
@@ -40,45 +40,56 @@ for i in range(K):
 isUsed = defaultdict(zeroer)
 notsolved = True
 end = False
-lastj = 9
+j = 9
 sortedlist = []
 score = 0
 i = N - 1
 maxlist = []
 maxscore = -1
-while (len(solution) != 0 and i > -1):
+isStarted = True
+while (len(solution) != 0 or i > -1):
+    isStarted = False
     k = i % K
-    j = lastj
     not_found = True
+    everythingscool = False
     while (not_found):
-        if (len(Tubes[k][j] > 0)):
+        if (len(Tubes[k][j]) > 0):
+
             for elem in Tubes[k][j]:
                 if isUsed[elem] == 0:
                     not_found = False
+                    print("I am here bitch j = ", j)
+                    everythingscool = True
                     break
-        if (j == 0):
-            if (len(solution > 0)):
+        if (j == 0 and not_found):
+            if (len(solution) > 0):
                 i, j, isUsed, sortedlist, score = solution.pop()
+                everythingscool = True
             else:
                 i = -1
+                everythingscool = False
                 break
         elif (not_found):
             j -= 1
-    score += i * j
-    for p in range(1, len(Tubes[k][j])):
-        isUsed[Tubes[k][j][p]] = 1
-        sortedlist.append(Tubes[k][j][p])
-        solution.append([i - 1, j, isUsed, sortedlist, score])
-        isUsed[Tubes[k][j][p]] = 0
-        sortedlist.pop()
-    sortedlist.append(Tubes[k][j][0])
-    isUsed[Tubes[k][j][0]] = 1
-    if (i == 0):
-        if (score > maxscore):
-            maxscore = score
-            maxlist = sortedlist
-        if (len(solution) > 0):
-            i, lastj, isUsed, sortedlist, score = solution.pop()
-    else:
-        i -= 1
+        print("Debugging bitch i = ", i, " j = ", j, " len(Tubes[k][j])",
+              len(Tubes[k][j]), " isEveryythin cool ? ", everythingscool)
+    if (everythingscool):
+        score += i * j
+        for p in range(1, len(Tubes[k][j])):
+            print("Then i am not here")
+            isUsed[Tubes[k][j][p]] = 1
+            sortedlist.append(Tubes[k][j][p])
+            solution.append([i - 1, j, isUsed, sortedlist, score])
+            isUsed[Tubes[k][j][p]] = 0
+            sortedlist.pop()
+        sortedlist.append(Tubes[k][j][0])
+        isUsed[Tubes[k][j][0]] = 1
+        if (i == 0):
+            if (score > maxscore):
+                maxscore = score
+                maxlist = sortedlist
+            if (len(solution) > 0):
+                i, j, isUsed, sortedlist, score = solution.pop()
+        else:
+            i -= 1
 print(maxscore, maxlist)
