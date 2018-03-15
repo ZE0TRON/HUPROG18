@@ -129,4 +129,4 @@ for i in range(int(input())):
             if (len(solution) > 0):
                 print("Takin solution")
                 i, j, isUsed, sortedlist, score = solution.pop()
-    print(maxscore, maxlist)
+    print(maxscore, reversed(maxlist))
