@@ -27,7 +27,7 @@ def solve(arr,asals):
             print(arr[asals[i-1]:asals[i]+1], file=out)
             return solve(arr[asals[i-1]:asals[i]+1],asals[:i])
         if(i+1==lnA):
-            print(arr[asals[i]+1:], file=out)
+            print(arr[asals[i]:], file=out)
             return solve(arr[asals[i]:],find_asals(len(arr[asals[i]:])))
         i+=1
     return "Not Found"

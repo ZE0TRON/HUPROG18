@@ -23,21 +23,24 @@ Sonunda ise aranan değer dizide varsa Found aksi takdirde Not Found yazdırıla
 Sample Input
 11
 1 3 5 6 10 21 32 43 56 123 125
-43
+124
 
 
 Sample Output
-[43, 56, 123, 125]
-[]
+[32, 43, 56, 123, 125]
+[56, 123, 125]
+[123, 125]
+[125]
 Not Found
 
 Explanation
-Asal indexlere bakıldığında; 3<43 geçildi. 5<43 geçildi. 10<43 geçildi. 32<43 geçildi.
-125>43 yeniden indexlenecek.
-[43,56,123,125] yeni listemiz.
-İşlemleri bu listede tekrarlıycaz. 56>43 ilk asal indexteki sayı büyük olduğu ve öncesinde başka asal index olmadığından
-dolayı
-[]
+Asal indexlere bakıldığında; 3<124 geçildi. 5<124 geçildi. 10<124 geçildi. 32<124 geçildi.
+125>124 yeniden indexlenecek.
+[56,123,125] yeni listemiz.
+İşlemleri bu listede tekrarlıycaz. 123<124 ve sonrasında başka asal index olmadığından dolayı
+[123,125] yeni listemiz
+İşlemleri bu listede tekrarlıycaz. 125>124 ve özel durumdan ötürü
+[125] yeni listemiz
 Not Found
 
 Sample Input
@@ -53,6 +56,6 @@ Found
 Explanation
 Asal indexlere bakıldığında; 5<18 diğer asal indexe geçildi. 7<18 diğer asal indexe geçildi. 10<18 diğer asal indexe geçildi.
 15<18 diğer asal indexe geçildi. 32>18  yeniden indexleyecez.
-[16,18,20,22]
+[16,18,20,22] yeni listemiz
 18=18 bulduk.
 Found
