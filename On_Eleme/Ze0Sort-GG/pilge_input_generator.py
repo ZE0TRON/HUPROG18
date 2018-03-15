@@ -5,39 +5,40 @@ from collections import defaultdict
 def zeroer():
     return 0
 
+
 print("Kac adet input dosyasi olusturulacak?: ")
 
 for i in range(int(input())):
-    if i<10:
+    if i < 10:
         out = open("input/input0" + str(i) + ".txt", "w")
     else:
         out = open("input/input" + str(i) + ".txt", "w")
 
-    print(i,"'ninci input dosyasi icin n sayisini girin:")
+    print(i, "'ninci input dosyasi icin n sayisini girin:")
     n = int(input())
 
-
     sayiList = []
-    enbuyuk = str(randint(10 ** (len(str(n))+2)+1,10 ** (len(str(n))+3) -1))
-    randomness = randint(0,n-1)
+    enbuyuk = str(
+        randint(10**(len(str(n)) + 2) + 1, 10**(len(str(n)) + 3) - 1))
+    randomness = randint(0, n - 1)
     basamak = len(enbuyuk)
-    k = randint(2,basamak//2)
+    kp = randint(2, basamak // 2)
     for j in range(n):
         if j == randomness:
             sayiList.append(enbuyuk)
             continue
-        sayi = str(randint(1,n*1000-1))
+        sayi = str(randint(1, n * 1000 - 1))
         hehe = basamak - len(sayi)
-        a = "0"*hehe
+        a = "0" * hehe
         a += sayi
 
         sayiList.append(a)
     print(sayiList)
-    print(k)
+    print(kp)
     #cozum#
 
     N = n
-    K = k
+    K = kp
     liste = sayiList
     Tubes = []
     stack = []
@@ -78,18 +79,18 @@ for i in range(int(input())):
     maxlist = []
     maxscore = -1
     isStarted = True
-    while (len(solution) != 0 or i > -1):
+    while (len(solution) > 0 and i > -1):
         isStarted = False
         k = i % K
         not_found = True
         everythingscool = False
         while (not_found):
             if (len(Tubes[k][j]) > 0):
-
                 for elem in Tubes[k][j]:
                     if isUsed[elem] == 0:
+                        print("Dude ", elem, " never used before")
                         not_found = False
-                        #print("I am here bitch j = ", j)
+                        print("I am here bitch j = ", j)
                         everythingscool = True
                         break
             if (j == 0 and not_found):
@@ -102,31 +103,30 @@ for i in range(int(input())):
                     break
             elif (not_found):
                 j -= 1
-            #print("Debugging bitch i = ", i, " j = ", j, " len(Tubes[k][j])",
-            #      len(Tubes[k][j]), " isEveryythin cool ? ", everythingscool)
-        if (everythingscool):
+            print("Debugging bitch i = ", i, " j = ", j, " len(Tubes[k][j])",
+                  len(Tubes[k][j]), " isEveryythin cool ? ", everythingscool)
+        if (everythingscool and i > -1):
             score += i * j
             for p in range(1, len(Tubes[k][j])):
                 #print("Then i am not here")
                 isUsed[Tubes[k][j][p]] = 1
                 sortedlist.append(Tubes[k][j][p])
-                solution.append([i - 1, j, isUsed, sortedlist, score])
+                solution.append(
+                    [i - 1, j, isUsed.copy(), sortedlist.copy(), score])
                 isUsed[Tubes[k][j][p]] = 0
                 sortedlist.pop()
             sortedlist.append(Tubes[k][j][0])
             isUsed[Tubes[k][j][0]] = 1
             if (i == 0):
-                if (score > maxscore):
+                if (score > maxscore and len(sortedlist) == N):
                     maxscore = score
-                    maxlist = sortedlist
+                    maxlist = sortedlist.copy()
                 if (len(solution) > 0):
                     i, j, isUsed, sortedlist, score = solution.pop()
             else:
                 i -= 1
+        if (i < 0):
+            if (len(solution) > 0):
+                print("Takin solution")
+                i, j, isUsed, sortedlist, score = solution.pop()
     print(maxscore, maxlist)
-
-
-
-
-
-
