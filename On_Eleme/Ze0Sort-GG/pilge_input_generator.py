@@ -15,15 +15,13 @@ for i in range(int(input())):
 
     print(i,"'ninci input dosyasi icin n sayisini girin:")
     n = int(input())
-    if n < 100000:
-        k = randint(1,10)
-    else:
-        k = randint(n//10000,n//1000)
+
 
     sayiList = []
     enbuyuk = str(randint(10 ** (len(str(n))+2)+1,10 ** (len(str(n))+3) -1))
     randomness = randint(0,n-1)
     basamak = len(enbuyuk)
+    k = randint(2,basamak//2)
     for j in range(n):
         if j == randomness:
             sayiList.append(enbuyuk)
