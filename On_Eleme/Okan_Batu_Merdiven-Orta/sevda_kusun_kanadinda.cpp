@@ -59,7 +59,7 @@ int main()
     ll ans=sol(v);
     ll sum = accumulate(v.begin(),v.end(),0);
     if(ans > sum - ans) cout << ans << " Pro";
-    else if(ans < sum - ans) cout<< ans << " Zone";
+    else if(ans < sum - ans) cout<< sum-ans << " Zone";
     else cout <<ans << " ProZone";
 
     return 0;

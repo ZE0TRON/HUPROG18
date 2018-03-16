@@ -13,6 +13,6 @@ for i in range(int(input())):
     maksimum=100
     print(n,file=out)
 
-    for i in range(n):
+    for k in range(n):
         sayi = randint(1,maksimum)
         print(sayi, file=out, end=" ")
