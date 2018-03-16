@@ -1,0 +1,42 @@
+N kişi arka arkaya sıralanır ve sıralama asla değişmemesi için iple birbilerine bağlanırlar.
+Başlangıçta herkeste 0 tane bilye vardır. Sonra bu sıradaki insanların sahip oldukları bilyelere
+3 farklı işlem yapılabilir.
+
+İlki e,ekleme işlemi. e X1 Y1 A B şeklinde olur. X.kişiden Y.ninci kişiye kadar A+i*B sayıda bilye verilir.
+
+ikinci işlem t, toplamadır. t X1 Y1 şeklinde bir girdi. X.kişiden Y.ninci kişiye kadar kişilerin bilyeleri toplanır.
+
+Üçüncü işlem ise g, geriye git fonksiyonu. g K1 şeklinde. İnsanların elindeki bilye sayısı K'nıncı değişime gidecek.
+0 olursa başlangıca gidilir.
+
+X1 ve Y1 den X ve Y yi elde işlemleri şu formule göre yapılmaktadır.
+X=[(X1+sonToplam) mod N]+1 ve Y=[ (Y1+sonToplam) mod N ]+1
+
+sonToplam başlangıçta 0. Sonrasında her t işleminde sonToplam degisecek.
+
+K1 den K elde etme ise,
+K=(K1+sonToplam) mod (şuanki işleme kadarki toplam e sayısı + 1)
+
+Input Format :
+
+ilk satırda N,M. N kişi, M işlem sayısı
+sonraki M satırda işlemler
+
+
+Constraints
+
+1 ≤ N, M ≤ 100000
+0 ≤ A, B ≤ 1000
+0 ≤ X1, Y1 ≤ 100000
+
+Output Format:
+
+
+Sample Input
+
+
+Sample Output
+
+
+
+Explanation

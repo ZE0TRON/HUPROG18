@@ -1,0 +1,24 @@
+İrade Ailesinin en büyük bireyi olan Milli İrade T günde T tane akşam yemeği verip sülaledeki X tane evli çifti
+evine çağırmaktadır. Akşam yemeği büyük bir yuvarlak masa etrafında yapılmakta. Her çiftin 1'den X e kadar numarsı vardır.
+Bu numaralar yuvarlak masaya rastgele yerleştirilmiştir. Bu durumdan hoştun olmayan karılar kocalarının yanında olmasını
+istemektedir. Kocalarda karılarının sözünü dinleyip yanlarına gidecektir. Ama Milli İrade'nin fark etmemesi için
+akrabalar sadece sağındaki yada solundaki akrabasıyla yer değiştirebilmektedir. Minimum yer değiştirme sonrasında bütün
+yan yana olması gerekmektedir. Minimum sayıyı bulunuz.
+
+
+Input Format :
+
+Constraints
+
+
+Output Format:
+
+
+Sample Input
+
+
+Sample Output
+
+
+
+Explanation

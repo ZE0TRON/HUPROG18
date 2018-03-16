@@ -9,5 +9,30 @@ Not :
 Input Format :
 N şeker sayısı.
 
+Constraints
+1<= N <= 250052
+
+
 Output Format:
-Kaç farklı şekilde şekerleri dağıtabileceği.
+Şekerleri kaç farklı şekilde dağıtabileceği.
+
+
+Sample Input
+
+3
+
+Sample Output
+
+6
+
+
+Explanation
+
+Okanın 3 şekeri var.
+1- Hepsini kendi yer
+2- 1 tanesini kendi yer 2 tanesini 1 arkadaşına verir
+3- 1 tanesini kendi yer 2 tanesini 2 farklı arkadaşına verir
+4- 2 tanesini kendi yer 1 tanesini arkadaşına verir
+5- Hiçbirini kendi yemez 3 tanesini 1 arkadaşına verir.
+6- Hiçbirini kendi yemez 3 tanesini 3 arkadaşına verir.
+Toplam 6 farklı yol

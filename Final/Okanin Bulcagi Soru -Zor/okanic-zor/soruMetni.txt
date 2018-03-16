@@ -1,0 +1,54 @@
+Simay'ın N tane şekeri vardır. N tane şekerde X tane farklı şeker vardır ve her türü bir sayıyla belirtiyor
+1,2,3,....,X şeklinde. Simay N tane şekerden kendine bir oyun yaratıyor. Şekerleri düz bir sıraya koyuyor.
+Ardından şekerlerin içinden belli Y tane ardışık şeker seçip türlerini bir kağıda yazıyor Ap, Ap+1,..., At.
+Aynı işlemi tekralıyor farklı yada aynı aralıktaki şekerlerle Ak,Ak+1,...,Al.
+Oyun şu şekilde oynanıyor, oluşturulan iki liste Simay'ın oluşturduğu bir kurala göre inceleniyor.
+Kuralı bir örnek üzerinden inceleyelim.
+Simayın 10 tane şekeri vardır ve 3 farkli türdendir.
+A={1,1,2,2,2,3,3,1,2,3} olsun. Bu listeden iki liste türetelim.
+İlk liste Ai=A0-A5 = {1,1,2,2,2,3} olsun.
+İkinci listemiz As=A2-A7 = {2,2,2,3,3,1} olsun.
+Kural şu şekilde işliyor. Alt listelere şeker türlerinin sayısına bakılıyor.
+Ai için S(1)=2,S(2)=3,S(3)=1,
+As için S(1)=1,S(2)=3,S(3)=2,
+şeker tür sayısından alde edilen sonuçlarla iki alt liste arasında bir eşleşme olup olmadığına bakılıyor.
+F(Ai)=As: F(1)=3, F(2)=2, F(3)=1 şeklinde tüm elemanlar için bir eşleşme çıkarsa ekrana "simay".Eşleşme
+olmaz is "simgunes" yazılcak.
+
+
+
+Input Format :
+ilk satır Z kaç kere sıfırdan oyuna başlıyacağı
+sonraki satırda N sayısı
+Sonraki satırda A şeker türleri listesi
+Sonraki sayırda Q sayısı kaç kere listeyi ayırıp bulduğu kuralı uygulayacağı.
+Sonraki Q satırda sırasıyla p,t,k,l olucaktır.
+
+Constraints
+1<=Z<=11
+1<=N<=75000
+1<=Q<=10000
+1<=X<=N
+1<=p<=t<=Y
+1<=l<=k<=Y
+t-p=l-k=Y
+
+Z tane sıfır başlangiçlarda toplam N<=150000
+                            toplam Q=35000 olsun batu dikkat yoksa patlayabilir çok büyüklükten
+
+
+Output Format:
+Her Qi için "simay" yada "simgunes" yazılcaktır.
+
+Sample Input
+
+
+
+Sample Output
+
+
+
+Explanation
+
+sqrt-decomposition,hash
+

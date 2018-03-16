@@ -1,6 +1,4 @@
-from random import randint
-
-print("kaç tane input case:"),
+print("kaç tane input case:")
 
 for i in range(int(input())):
     if i<10:
@@ -8,11 +6,6 @@ for i in range(int(input())):
     else:
         out = open("input/input" + str(i) + ".txt", "w")
 
-    print(i," n sayisini girin:")
+    print(i," seker sayisini girin:")
     n = int(input())
-    maksimum=100
     print(n,file=out)
-
-    for i in range(n):
-        sayi = randint(1,maksimum)
-        print(sayi, file=out, end=" ")
