@@ -26,8 +26,7 @@ Sample Output1
 5 Pro
 
 Explanation
-Pro,Zone,Pro,Zone,Pro
- 1 , 2  , 3 , 2  , 1
+Pro->soldaki 1'i, Zone-> sağdaki 1'i, Pro-> sağdaki 2'yi, Zone 3'ü, Pro 2'yi aldı ve Pro kazandı
 
 
 Sample Input2
@@ -38,5 +37,4 @@ Sample Output2
 3 ProZone
 
 Explanation
-Pro,Zone,Pro,Zone
- 1 , 2  , 2  , 1
+Pro->soldaki 1'i, Zone-> soldaki 2'yi, Pro-> 2'yi, Zone 1'i aldı ve berabere bitti.

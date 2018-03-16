@@ -14,7 +14,7 @@ Son satırda aranan X değeri verilecektir.
 
 Constraints
 1<= N <= 275000
-1<= w <= 180 / N burayı yenile
+1<= Wi <= 1000000000
 
 Output Format
 Arama sırasında yeniden indexlenen her bir dizinin elemanları bastırılacak.(Her bir dizi için ayrı satırda).
@@ -39,7 +39,7 @@ Asal indexlere bakıldığında; 3<124 geçildi. 5<124 geçildi. 10<124 geçildi
 32 43 56 123 125 yeni listemiz.
 İşlemleri bu listede tekrarlıycaz. 43<124 geçildi. 56<124 geçildi 124<125 tekrar indexlenecek.
 56 123 125 yeni listemiz
-İşlemleri bu listede tekrarlıycaz. 125>124 ve özel durumdan ötürü
+İşlemleri bu listede tekrarlıycaz. 123<124 ve özel durumdan ötürü
 123 125 yeni listemiz
 125 başka eleman yok.
 Not Found

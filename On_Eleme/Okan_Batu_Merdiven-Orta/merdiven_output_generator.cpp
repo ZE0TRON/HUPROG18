@@ -6,8 +6,6 @@
 #include <iostream>
 #include <sstream>
 
-#define SSTR( x ) static_cast< std::ostringstream & >( \( std::ostringstream() << std::dec << x ) ).str()
-
 using namespace std;
 typedef long long ll;
 ll sol(vector<ll>v)
@@ -48,9 +46,6 @@ ll sol(vector<ll>v)
     return dp[0][n-1];
 }
 
-
-
-
 vector<string> GetDirectoryFiles(const string& dir) {
     vector<string> files;
     shared_ptr<DIR> directory_ptr(opendir(dir.c_str()), [](DIR* dir){ dir && closedir(dir); });
@@ -66,7 +61,6 @@ vector<string> GetDirectoryFiles(const string& dir) {
     }
     return files;
 }
-
 
 int main()
 {
@@ -102,7 +96,7 @@ int main()
         cout<<ans<<endl;
         ll sum = accumulate(v.begin(),v.end(),0);
         if(ans > sum - ans) outputfile << ans << " Pro";
-        else if(ans < sum - ans) outputfile<< ans << " Zone";
+        else if(ans < sum - ans) outputfile<< sum-ans << " Zone";
         else outputfile <<ans << " ProZone";
         inputfile.close();
         outputfile.close();

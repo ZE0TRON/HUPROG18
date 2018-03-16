@@ -37,7 +37,7 @@ ll sol(vector<ll>v)
                 z = dp[i][j-2];
             else
                 z = 0;
-            dp[i][j] = (max(v[i] + min(x, y), v[j] + min(y, z)))%1000000007;
+            dp[i][j] = (max(v[i] + min(x, y), v[j] + min(y, z)));
             ++i;
             ++j;
         }
