@@ -27,20 +27,21 @@ Sample Input
 
 
 Sample Output
-[32, 43, 56, 123, 125]
-[56, 123, 125]
-[123, 125]
-[125]
+32 43 56 123 125
+56 123 125
+123 125
+125
 Not Found
 
 Explanation
 Asal indexlere bakıldığında; 3<124 geçildi. 5<124 geçildi. 10<124 geçildi. 32<124 geçildi.
 125>124 yeniden indexlenecek.
-[56,123,125] yeni listemiz.
-İşlemleri bu listede tekrarlıycaz. 123<124 ve sonrasında başka asal index olmadığından dolayı
-[123,125] yeni listemiz
+32 43 56 123 125 yeni listemiz.
+İşlemleri bu listede tekrarlıycaz. 43<124 geçildi. 56<124 geçildi 124<125 tekrar indexlenecek.
+56 123 125 yeni listemiz
 İşlemleri bu listede tekrarlıycaz. 125>124 ve özel durumdan ötürü
-[125] yeni listemiz
+123 125 yeni listemiz
+125 başka eleman yok.
 Not Found
 
 Sample Input
@@ -50,12 +51,12 @@ Sample Input
 
 
 Sample Output
-[16, 18, 20, 32]
+16, 18, 20, 32
 Found
 
 Explanation
 Asal indexlere bakıldığında; 5<18 diğer asal indexe geçildi. 7<18 diğer asal indexe geçildi. 10<18 diğer asal indexe geçildi.
 15<18 diğer asal indexe geçildi. 32>18  yeniden indexleyecez.
-[16,18,20,22] yeni listemiz
+16,18,20,22 yeni listemiz
 18=18 bulduk.
 Found

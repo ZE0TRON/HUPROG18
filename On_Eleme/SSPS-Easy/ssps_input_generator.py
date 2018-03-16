@@ -27,3 +27,7 @@ for i in range(int(input())):
     print(file=out)
     print(aranansayi, file=out)
 
+"""
+
+
+"""

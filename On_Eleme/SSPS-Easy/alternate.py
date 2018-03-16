@@ -21,10 +21,10 @@ def solve(arr,asals):
         if(arr[asals[i]]==aranan):
             return "Found"
         if(arr[asals[i]]>aranan):
-            print(arr[asals[i-1]:asals[i]+1])
+            print(" ".join([str(x) for x in arr[asals[i-1]:asals[i]+1]]))
             return solve(arr[asals[i-1]:asals[i]+1],asals[:i])
         if(i+1==lnA):
-            print(arr[asals[i]:])
+            print(" ".join([str(x) for x in arr[asals[i]:]]))
             return solve(arr[asals[i]:],find_asals(len(arr[asals[i]:])))
         i+=1
     return "Not Found"
