@@ -11,9 +11,8 @@ Sonraki satırda boşlukla ayrılmış N adet sözcük.
 Sözcükler sadece alfabenin küçük harflerini içermektedir. Uzunluğunun en az 3 karakter olacağı garantilenmiştir.
 
 Çıktı:
-(????)Verilen sırayla, her sözcük için skorunu yeni satıra bastırınız.
+Verilen sırayla, her sözcüğün skorunu boşluklarla ayrılmış biçimde tek satıra yazdırınız.
 
 Sınırlamalar:
-(????)
-
-denemedeneme
+10<=N<=200000
+3<=k<10, k:sözcük harf sayısı
