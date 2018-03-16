@@ -7,10 +7,17 @@ Puanları toplamı en fazla olan diziyi bastırınız.
 
 
 Input Format :
-İlk satırda N sıralanması istenen sayı sayısı.
-İkinci satırda K sayısı.
-Üçüncü satırda N adet sayı boşluklarla ayrılmış şekilde.
+İlk satırda Q sorgu sayısı.
+Devam eden Q tane blogun,
+
+İlk satırınıda N sıralanması istenen sayı sayısı.
+İkinci satırında K sayısı.
+Üçüncü satırında N adet sayı boşluklarla ayrılmış şekilde.
 
 Output Format :
 Verilen kurala göre sıralanmış diziyi sayıların arasında boşluk olacak şekilde ekrana bastırınız. Böyle bir
 dizi elde edilemiyorsa -1 bastırınız.
+
+Constraints:
+1<N<=30
+0<k<10
