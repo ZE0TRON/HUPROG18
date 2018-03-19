@@ -1,5 +1,5 @@
 1,2...N'e kadar N kişi ve kişi sayısından bir eksik tane ip vardır.N kişi rastgele bir şekilde birbirine bağlanır.
-erhangi iki kişi arasında kesinlikle bir yol vardır. Başlangıçta herkeste 0 tane bilye vardır. Sonra bu sıradaki
+Herhangi iki kişi arasında kesinlikle bir yol vardır. Başlangıçta herkeste 0 tane bilye vardır. Sonra buradaki
 insanların sahip oldukları bilyelere 3 farklı işlem yapılabilir.
 
 İlki e,ekleme işlemi. e a b c d şeklinde olur. ilk kişiye c tane bilye sonrasında d sayıda bilye ekleyerek X kişisinden
