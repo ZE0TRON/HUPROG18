@@ -1,42 +1,48 @@
-N kişi arka arkaya sıralanır ve sıralama asla değişmemesi için iple birbilerine bağlanırlar.
-Başlangıçta herkeste 0 tane bilye vardır. Sonra bu sıradaki insanların sahip oldukları bilyelere
-3 farklı işlem yapılabilir.
+1,2...N'e kadar N kişi ve kişi sayısından bir eksik tane ip vardır.N kişi rastgele bir şekilde birbirine bağlanır.
+erhangi iki kişi arasında kesinlikle bir yol vardır. Başlangıçta herkeste 0 tane bilye vardır. Sonra bu sıradaki
+insanların sahip oldukları bilyelere 3 farklı işlem yapılabilir.
 
-İlki e,ekleme işlemi. e X1 Y1 A B şeklinde olur. X.kişiden Y.ninci kişiye kadar A+i*B sayıda bilye verilir.
+İlki e,ekleme işlemi. e a b c d şeklinde olur. ilk kişiye c tane bilye sonrasında d sayıda bilye ekleyerek X kişisinden
+Y kişisine kadar bilye verilir.
 
-ikinci işlem t, toplamadır. t X1 Y1 şeklinde bir girdi. X.kişiden Y.ninci kişiye kadar kişilerin bilyeleri toplanır.
+ikinci işlem t, toplamadır. t a b şeklinde bir girdi. X kişisinden Y kişisine kadar kişilerin sahip olduğu bilyelerin
+toplamı ekrana yazdırılır.Bu toplam bizim için önemlidir.
 
-Üçüncü işlem ise g, geriye git fonksiyonu. g K1 şeklinde. İnsanların elindeki bilye sayısı K'nıncı değişime gidecek.
-0 olursa başlangıca gidilir.
+Üçüncü işlem ise g, geriye git fonksiyonu. g a şeklinde. İnsanların elindeki bilye sayısı D'ninci değişime gidecek.
 
-X1 ve Y1 den X ve Y yi elde işlemleri şu formule göre yapılmaktadır.
-X=[(X1+sonToplam) mod N]+1 ve Y=[ (Y1+sonToplam) mod N ]+1
+e ve t işlemleri için:
+a ve b'den X ve Y yi elde işlemleri aşağıdaki kurala göre bulunmaktadır.
+X için a, Y için b kullanılacaktır.  a ve ya b ile "t" işlemlerinin sonuncusunda elde edilen son toplam ile toplayıp
+kişi sayının dışına çıkmamak için kişi sayısına göre modunu alıyoruz.Mod işlemi sonucunda sıfırıncı kişiyi elde edebiliriz
+ve öyle bir kişi olmadığı için bu işlemin sonucunu bir arttırıyoruz. Son toplam başlangıçta 0.
 
-sonToplam başlangıçta 0. Sonrasında her t işleminde sonToplam degisecek.
+g işlemi için:
+a dan D elde etme ise,
+a ile son toplamı toplayıp bu işleme kadar olan e işlemlerinin sayısının bir fazlasına göre modunu alıyoruz.Bir fazlası
+son değişimede gidebilmek içindir.
 
-K1 den K elde etme ise,
-K=(K1+sonToplam) mod (şuanki işleme kadarki toplam e sayısı + 1)
 
 Input Format :
 
-ilk satırda N,M. N kişi, M işlem sayısı
-sonraki M satırda işlemler
+ilk satırda N,Q. N kişi, Q işlem sayısı.
+Sonraki N-1 satırda iple birbirine bağlanan kişiler.
+sonraki Q satırda işlemler
 
 
 Constraints
 
-1 ≤ N, M ≤ 100000
-0 ≤ A, B ≤ 1000
-0 ≤ X1, Y1 ≤ 100000
+1 ≤ N, Q ≤ 100000
+0 ≤ a, b ≤ 100000
+0 ≤ c, d ≤ 1000
+
 
 Output Format:
+
+her t işleminin sonucu ekrana bastırılacaktır.
 
 
 Sample Input
 
-
 Sample Output
-
-
 
 Explanation
