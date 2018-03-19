@@ -1,10 +1,10 @@
-İrade Ailesinin en büyük bireyi olan Milli İrade T günde T tane akşam yemeği verip sülaledeki X tane evli çifti
-evine çağırmaktadır. Akşam yemeği büyük bir yuvarlak masa etrafında yapılmakta. Her çiftin 1'den X e kadar numarsı vardır.
-Bu numaralar yuvarlak masaya rastgele yerleştirilmiştir. Bu durumdan hoştun olmayan karılar kocalarının yanında olmasını
-istemektedir. Kocalarda karılarının sözünü dinleyip yanlarına gidecektir. Ama Milli İrade'nin fark etmemesi için
-akrabalar sadece sağındaki yada solundaki akrabasıyla yer değiştirebilmektedir. Minimum yer değiştirme sonrasında bütün
-yan yana olması gerekmektedir. Minimum sayıyı bulunuz.
-
+Bimin 3300 Tl note 8 dağatacağını öğrenen Okan ve ölücü arkadaşları sabağın köründe mağazanın önünde sıraya girerler.
+Sonrasında gelen insanlar Okan ve arkadaşlarının adil olmayan bir şey yapıp çok erkenden sıraya girdiklerini söylerler.
+Bimin sahibi ise sıradaki herkese eğlenmek için bir görev verir. Herkese birer yarım  bilet dağıtır. Her biletin sırada başka bir
+eşi bulunmaktadır.Eğer sıradaki insanlar minumum sayıda  bir öne geçme veya bir arkaya geçme işlemi yaparak her yarım biletin diğer eşiyle beraber yanyana gelmesini sağlarlarsa,
+Bimin sahibi sıradaki herkese note 8 vericektir.
+Özel durum olarak sıranın en önündeki ile en sonundaki insan da kendi aralarında yer değiştirebilir.
+Okan ve arkadaşlarına yardım edip note 8 i almalarını sağlayınız.
 
 Input Format :
 

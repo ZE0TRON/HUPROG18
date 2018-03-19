@@ -1,0 +1,27 @@
+ze0city'nin en büyük sorunlarından biri ulaşımdır. ze0city belediye başkanı ze0tron şehre yeni toplu taşıma rotaları eklemeye karar verir.
+Başlangıçta tüm semtlerin eşit değerde olduğunu varsayalım ve bu değer 0 a eşit olsun. İki semt arasında bir rota olusturulduğunda bu rota üzerindeki
+semtler özel bir formüle göre değer kazanmaktadır. Ancak yapılan her yatırım planı her zaman işleme koyulmaz. Belediye başkanı ze0tron bazı yatırımların riskli olduğunu
+bazı rotaları yaptırdığı N'ninci rotaya kadar geri alabilir.
+Sizden istenen verilen yeni toplu taşıma rotalarına göre bu değerleri hesaplayıp.Sonrasinda  verilen başka
+herhangi bir rota üzerindeki semtlerin değerlernin toplamını ekrana bastırmanızdır.Her rotanın sabit bir değeri ve çarpan bir değeri vardır. Sabit değer P çarpan değer ise K
+olarak ifade edilecektir.
+
+C semtinden D semtine giden bir rota olusturulduğu zaman rota üzerindeki ilk semtin değeri(C semti) P+K kadar artar , rota üzerindeki ikinci semtin değeri P+2*K kadar artar ve
+D semtine kadar devam eder aynı şekilde formüle göre D semtinin değeride artar.
+
+
+Not: İki semt arasında sadece bir yol bulunmaktadır.
+Input Format:
+
+İlk satırda semt sayısı N,
+Takip eden N-1 satırda semtler arasındaki bağlantılar verilecektir.
+Sonraki satrıda sorgu sayısı M,
+
+Üç tip sorgu bulunmaktadır :
+T C1 D1 P K -> C ile D arasına bir toplu tasıma rotası koyulur.En son hesapladığınız semt değerleri toplamına U diyelim.(Eğer daha hiç hesaplatmadıysanız U=0 kabul edilecektir.)
+Burada C = ((C1+U)%N)+1  ve D= ((D1+U)%N)+1 dir.
+
+O C1 D1 -> C ile D arasındaki tüm semtlerin değerli toplamını hesaplamanızı isteyen sorgudur. Aynı şekilde
+Burada C = ((C1+U)%N)+1  ve D= ((D1+U)%N)+1 dir.
+
+G X1 -> X'inci rotadan sonraki tüm rotaları iptal eden sorgudur. Burada X = (X1+U)%(Bundan önce rota olusturmak için verilen sorgu sayısı +1) dir.
