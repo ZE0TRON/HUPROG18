@@ -16,7 +16,7 @@ input Formatı:
 ilk satır N sayısını vericek.
 sonraki N-1 satır bağlantıları
 sonraki satır ze0city'deki semtlerin şuanki değerleri
-sonraki satırda ouzSan'ın istediği  semt değerleri.
+sonraki satırda Torpak'ın istediği  semt değerleri.
 
 
 output format:
