@@ -9,7 +9,6 @@ olarak ifade edilecektir.
 C semtinden D semtine giden bir rota olusturulduğu zaman rota üzerindeki ilk semtin değeri(C semti) P+K kadar artar , rota üzerindeki ikinci semtin değeri P+2*K kadar artar ve
 D semtine kadar devam eder aynı şekilde formüle göre D semtinin değeride artar.
 
-
 Not: İki semt arasında sadece bir yol bulunmaktadır.
 Input Format:
 

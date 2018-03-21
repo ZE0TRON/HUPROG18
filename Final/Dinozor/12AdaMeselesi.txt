@@ -1,0 +1,85 @@
+ze0city'de saltanat sistemi vardır. Bir önceki belediye başkanı ölünce yerine oğlu Torpak geçer. Babasından
+devraldığı şehiri Torpak pek sevmemektedir çünkü babasından kalan şehirde semtlerin değerleri Torpak'ın hoşuna gitmemektedir.
+Bazı semtler ederinden fazla değerliler bazılarıda tam tersi şekilde çok az değerliler. Bunu değiştirmek isteyen
+Torpak ülkenin en iyi şehir planlayıcısı Simay'ı çağırır. Durumu Simay'a anlatır. ze0city'de N tane semt vardır. Bu semtler
+N-1 tane 4 şerit duble yolla birbirine bağlıdır. Herhangi 2 semt arasında tek 1 yol vardır. Her semtin değeri birbirinden
+farklıdır.Bu değerleri semtteki dinazor heykeli belirlemektedir. Semtlerin değerlerinin değişmesi için dinazorların
+eski semtlerinden yeni semtlerine taşınması gerekmektedir. Değeri 0 olan semtte dinazor heykeli yoktur, diğer semtlerde
+birer tane dinazor vardır. Bu taşıma işlemleri dolu semtten boş semte olucaktır.
+
+Simay'ın görevi ise en az taşıma sayısıyla heykelleri yeni semtlerine taşımaktır. Simay'ın belediye başkanından aldığı yetkiyle
+2 semt arasına yeni bir yol yaptırabilir.Yol yaptırma hakkı tektir. Birden fazla yeni yol yaptıramaz. Simay şehir planlarını eline
+aldığında Torpak'a geri dönüş yapıcaktır. Bu konuda Simay'a yardım eder misin?
+
+
+input Formatı:
+ilk satır N sayısını vericek.
+sonraki N-1 satır bağlantıları
+sonraki satır ze0city'deki semtlerin şuanki değerleri
+sonraki satırda ouzSan'ın istediği  semt değerleri.
+
+
+output format:
+Simay 3 farklı geri dönüş yapabilir.
+İlki heykellerin diğer semtlere taşınması imkansız ise çıktı "i" şeklinde olucak
+ikincisi yeni yol yapmadan taşıyabilirsin. Çıktı "t" şeklinde olucak ve  t, toplam heykel değiştirme sayısı.
+üçüncüsü ise yeni yol yaparak taşınanlar. Çıktı "x y t" şeklinde. x ve y yeni yolun hangi iki semt arasına koyduğun. t ise
+ikinci çıktı formatında olduğu gibi tolam heykel değiştirme sayısı. ( x < y )
+
+
+Sample Input1:
+6
+0 4 3 2 1 5
+4 3 0 2 1 5
+1 2
+2 3
+2 5
+5 4
+2 6
+
+Sample Output1:
+2
+
+Explanation1:
+İlk olarak 2. semtteki heykel 1. semte taşınır. Sonra 3. semtteki heykel 2.semte taşınır.
+Toplamda 2 taşıma işlemiyle istenilen semt değerlerine ulaştık.
+
+
+
+Sample Input2:
+6
+0 4 2 1 3 5
+4 0 2 5 1 3
+1 2
+2 3
+2 5
+5 4
+2 6
+
+Sample Output2:
+4 6 5
+
+Explanation2:
+4 ve 6 nolu semtler arasına yeni bir yaptıktan sonra.
+Birinci taşıma 2. semtteki heykel 1. semte taşındı.
+İkinci taşıma 5. semtteki heykel 2. semte taşındı.
+Üçüncü taşıma 4. semtteki heykel 5. semte taşındı.
+Dördüncü taşıma 6. semtteki heykel 4. semte taşındı.
+Beşinci taşıma 2. semtteki heykel 6. semte taşındı.
+Toplamda 5 taşıma sonunda istenilen semt değerlerine ulaşmış olduk.
+
+
+Sample Input3:
+5
+0 1 2 4 3
+3 2 1 4 0
+1 2
+2 3
+2 5
+5 4
+
+Sample Output3:
+i
+
+Explanation3:
+Hiçbir şekilde değişiklik yapılamıyor.
