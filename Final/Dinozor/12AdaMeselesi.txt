@@ -3,11 +3,11 @@ devraldığı şehiri Torpak pek sevmemektedir çünkü babasından kalan şehir
 Bazı semtler ederinden fazla değerliler bazılarıda tam tersi şekilde çok az değerliler. Bunu değiştirmek isteyen
 Torpak ülkenin en iyi şehir planlayıcısı Simay'ı çağırır. Durumu Simay'a anlatır. ze0city'de N tane semt vardır. Bu semtler
 N-1 tane 4 şerit duble yolla birbirine bağlıdır. Herhangi 2 semt arasında tek 1 yol vardır. Her semtin değeri birbirinden
-farklıdır.Bu değerleri semtteki dinazor heykeli belirlemektedir. Semtlerin değerlerinin değişmesi için dinazorların
-eski semtlerinden yeni semtlerine taşınması gerekmektedir. Değeri 0 olan semtte dinazor heykeli yoktur, diğer semtlerde
-birer tane dinazor vardır. Bu taşıma işlemleri dolu semtten boş semte olucaktır.
+farklıdır.Bu değerleri semtteki dinozor heykeli belirlemektedir. Semtlerin değerlerinin değişmesi için dinozorların
+eski semtlerinden yeni semtlerine taşınması gerekmektedir. Değeri 0 olan semtte dinozor heykeli yoktur, diğer semtlerde
+birer tane dinozor vardır. Bu taşıma işlemleri dolu semtten boş semte olucaktır.
 
-Simay'ın görevi ise en az taşıma sayısıyla heykelleri yeni semtlerine taşımaktır. Simay'ın belediye başkanından aldığı yetkiyle
+Simay'ın görevi ise en az taşıma sayısıyla dinozor heykellerini yeni semtlerine taşımaktır. Simay'ın belediye başkanından aldığı yetkiyle
 2 semt arasına yeni bir yol yaptırabilir.Yol yaptırma hakkı tektir. Birden fazla yeni yol yaptıramaz. Simay şehir planlarını eline
 aldığında Torpak'a geri dönüş yapıcaktır. Bu konuda Simay'a yardım eder misin?
 
@@ -21,10 +21,10 @@ sonraki satırda Torpak'ın istediği  semt değerleri.
 
 output format:
 Simay 3 farklı geri dönüş yapabilir.
-İlki heykellerin diğer semtlere taşınması imkansız ise çıktı "i" şeklinde olucak
-ikincisi yeni yol yapmadan taşıyabilirsin. Çıktı "t" şeklinde olucak ve  t, toplam heykel değiştirme sayısı.
+İlki dinozor heykellerini diğer semtlere taşınması imkansız ise çıktı "i" şeklinde olucak
+ikincisi yeni yol yapmadan taşıyabilirsin. Çıktı "t" şeklinde olucak ve  t, toplam heykel yer değiştirme sayısı.
 üçüncüsü ise yeni yol yaparak taşınanlar. Çıktı "x y t" şeklinde. x ve y yeni yolun hangi iki semt arasına koyduğun. t ise
-ikinci çıktı formatında olduğu gibi tolam heykel değiştirme sayısı. ( x < y )
+ikinci çıktı formatında olduğu gibi tolam heykel yer değiştirme sayısı. ( x < y )
 
 
 Sample Input1:
@@ -41,8 +41,8 @@ Sample Output1:
 2
 
 Explanation1:
-İlk olarak 2. semtteki heykel 1. semte taşınır. Sonra 3. semtteki heykel 2.semte taşınır.
-Toplamda 2 taşıma işlemiyle istenilen semt değerlerine ulaştık.
+İlk olarak 2. semtteki dinozor heykeli 1. semte taşınır. Sonra 3. semtteki dinozor heykeli 2.semte taşınır.
+Toplamda 2 taşıma işlemiyle yeni yol yapmadan istenilen semt değerlerine ulaştık.
 
 
 
@@ -61,12 +61,12 @@ Sample Output2:
 
 Explanation2:
 4 ve 6 nolu semtler arasına yeni bir yaptıktan sonra.
-Birinci taşıma 2. semtteki heykel 1. semte taşındı.
-İkinci taşıma 5. semtteki heykel 2. semte taşındı.
-Üçüncü taşıma 4. semtteki heykel 5. semte taşındı.
-Dördüncü taşıma 6. semtteki heykel 4. semte taşındı.
-Beşinci taşıma 2. semtteki heykel 6. semte taşındı.
-Toplamda 5 taşıma sonunda istenilen semt değerlerine ulaşmış olduk.
+Birinci taşıma 2. semtteki dinozor heykeli 1. semte taşındı.
+İkinci taşıma 5. semtteki dinozor heykeli 2. semte taşındı.
+Üçüncü taşıma 4. semtteki dinozor heykeli 5. semte taşındı.
+Dördüncü taşıma 6. semtteki dinozor heykeli 4. semte taşındı.
+Beşinci taşıma 2. semtteki dinozor heykeli 6. semte taşındı.
+Toplamda 5 taşıma sonunda istenilen semt değerlerine 4 ve 6 nolu semtler arasına yeni yol yaparak ulaşmış olduk.
 
 
 Sample Input3:
