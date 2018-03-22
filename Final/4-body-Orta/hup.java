@@ -112,7 +112,7 @@ public class hup {
         Node temp = root;
 
         int n = reader.nextInt();
-
+        reader.nextLine();
         for (int i = 0; i < n;i++){
             String arr[] = reader.nextLine().split(" ");
             for(int elem = 0;elem < arr.length;elem++){
