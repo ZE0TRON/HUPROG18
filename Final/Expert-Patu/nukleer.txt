@@ -1,33 +1,32 @@
-Amerika Birlesmis Milletler baskani olan Trump yine her zamanki gibi kendi twitter sayfasindan tweet'ler atmaktadir.
-Bu tweet'leri kendi not defterine daha onceden yazip hazirladigi notlardan atmaktadir.Bu notlarin arasinda N adet
-nukleer basligin firlatma kodlari da yer almaktadir. Trump, bu firlatma kodlarini yanlisikla twitter sayfasinda
-paylasir. Bu kodlari alan bir terorist grubu, bu nukleer basliklarin hepsini 2 boyutlu dunya haritasi uzerindeki
-noktalara firlatirlar. Neyse ki dunya uzerindeki her ulkenin kendine ait bir anti roket sistemi vardir.Eger bu ulkeler
-onceden uyarilirsa kendilerine yollanan bu roketleri imha edebilmektedirler. Olasi bir kiyametin onlenmesi icin butun
-ulkeler uyarilmak zorundadir. Trump'un bas danismani olarak sizin, Trump'a bu koduna yardim etmeniz beklenmektedir.
+Amerikan başkanı olan Trump yine her zamanki gibi kendi twitter sayfasından tweet'ler atmaktadır.
+Bu tweet'leri kendi not defterine daha onceden yazıp hazırladığı notlardan atmaktadır.Bu notlarn arasında N adet
+nukleer başlığın firlatma kodları da yer almaktadır. Trump, bu fırlatma kodlarını yanlışlıkla twitter sayfasında
+paylaşır. Bu kodları alan bir terörist grubu, bu nükleer başlıkların hepsini 2 boyutlu dünya haritası üzerindeki
+noktalara fırlatırlar. Neyse ki dünya üzerindeki her ülkenin kendine ayit bir anti roket sistemi vardır.Eğer bu ülkeler
+önceden uyarılırsa kendilerine yollanan bu roketleri imha edebilmektedirler. Olası bir kıyametin önlenmesi için bütün
+ülkeler uyarilmak zorundadır. Trump'un baş danışmanı olarak sizin, Trump'a bu konuda yardım etmeniz beklenmektedir.
 
 
-Dunya uzerinde toplam M adet ulke vardir. Her ulkenin siniri birbirinden farkli L adet nokta ile belirlenmistir.
-Bu noktalari sirasiyla birbirine duz bir cizgi ile bagladiginizda ulkelerin harita uzerindeki sinirlarini elde
-etmektesiniz(en son verilen nokta ile ilk verilen nokta birbirine baglanacak). Hicbir ulke siniri birbirini
+Dünya üzerinde toplam M adet ülke vardir. Her ülkenin sınırı birbirinden farkli L adet nokta ile belirlenmiştir.
+Bu noktalar sırasıyla düz bir çizgi ile bağladığınızda ülkelerin harita üzerindeki sınırlarını elde
+etmektesiniz(en son verilen nokta ile ilk verilen nokta birbirine bağlanacak). Hiçbir ülke sınırı birbirini
 kesmemektedir.
 
 Input format:
 
-ilk satir M ulke sayisi
-takip eden M*2 satirda;
-L nokta sayisi
-bir sonraki satirda L adet nokta, noktalar birbirinden bir adet bosluk lie ayrilmistir
-( her bir nokta x ve y degerine sahiptir ve bunlar bosluklarla birbirinden ayrilmistir)
-sonraki satirda M adet roket sayisi
-takip eden N satirda;
-x y roketin dusecegi koordinat cift
+İlk satırda M ülke sayısı,
+Takip eden M*2 satırda;
+L nokta sayısı
+Bir sonraki satırda boşluklarla ayrılmış şekide L adet nokta(her bir nokta x ve y değerine sahiptir ve bunlar da boşluklarla birbirinden ayrılmıştır.),
+Sonraki satırda M adet roket sayısı
+Takip eden N satırda;
+x y roketin düşeceği koordinat çifti verilecektir.
 
 Output format:
 
-N adet satirda sirasiyla roketlerin dusecegi ulkelerin numaralari( ulke numaralari inputta verildigi sirada 1'den
-M'e kadar devam etmektedir)
-Eger roket okyanus uzerine(hicbir ulke sinirina dahil olmayan bil bolge)'ye dusuyorsa 0 bastirin.
+N adet satırda sırasıyla roketlerin düşeceği ülkelerin numaraları(ülke numaraları inputta verildiği sırayla 1'den
+M'e kadar değer alabilmektedir.)
+Eğer roket okyanus üzerine(hiçbir ülke sınırına dahil olmayan bir bölge)'ye düşüyorsa 0 bastırmanız gerekmektedir.
 
 
 Sample Input:
