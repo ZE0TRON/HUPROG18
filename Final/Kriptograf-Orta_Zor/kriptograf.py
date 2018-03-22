@@ -5,8 +5,28 @@ def solve(m, P):
     return m ^ P
 
 
+def fastModularExp(a, b):
+    result = 1
+    a = a % K
+    while b > 0:
+        if (b % 2 == 1):
+            result = (result * a) % K
+        b = b >> 1
+        a = (a * a) % K
+    return result
+
+
 def generateNewKey():
-    return 5
+    nodes = []
+    for elem in graph.keys():
+        if (len(graph[elem]) % U == 0):
+            nodes.append(elem)
+    total = sum(nodes)
+    key = 0
+    for i in range(len(nodes)):
+        deger = total - nodes[i]
+        key = (key + fastModularExp(nodes[i], deger)) % K
+    return key
 
 
 graph = defaultdict(list)
@@ -15,7 +35,7 @@ for i in range(E):
     x, y = map(int, input().split(" "))
     graph[x].append(y)
     graph[y].append(x)
-P, Q = map(int, input().split(" "))
+P, Q, U, K = map(int, input().split(" "))
 for i in range(Q):
     d = input().split()
     a = int(d[0])

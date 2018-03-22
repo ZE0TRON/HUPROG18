@@ -3,7 +3,7 @@ Bu şifreleme sisteminde bir çizge ve bu çizge üzerindeki en uzun cycle kulla
 
 Öncesinde bir çizge ve içindeki bağlantılar size verilecek. Sonra
 İlk verilen sorgu başlangıç anahtarıyla şifrelenmiş olup başlagıç anahtarı size verilecektir.
-Bu sorgu sonrasında çizgemizdeki en uzun cycle  olusturan nodelar a1,a2,a3..an olsun.
+Bu sorgu sonrasında çizgemizde kenar sayısı U sayısına tam bölünen nodelar nodelar a1,a2,a3..an olsun.
 Yeni keyimiz  (a1^(a2+a3+a4+a5.+..+an) + a2^(a1+a3+a4+...+an) +...+a^n(a1+a2+a3...+an-1) ) % K değerine eşit olacaktır.
 Şifreleme algoritması olarak ise xor işlemini kullanır.
 Not: Her sorguda verilen sayılar ayrı ayrı şifrelenecektir.
@@ -18,7 +18,7 @@ Sonunda ise en son satırda  verilen bir şifrelenmiş sayının gerçek değeri
 Input Format :
 İlk satırda düğüm sayısı  N ve kenar sayısı E sayısı boşluklarla ayrılmış şekilde verilecektir.
 Sonraki takip eden E satırda düğümler arasında bağlantılar aralarında boşluk olacak şekilde verilecektir.
-Sonraki satırda başlangıç anahtarı olan P değeri  ve sorgu sayısı Q boşluklarla ayrılmış şekilde verilecektir.
+Sonraki satırda başlangıç anahtarı olan P değeri  , sorgu sayısı Q , U değeri ve K değeri boşluklarla ayrılmış şekilde verilecektir.
 Devam eden Q satırda sorgular bulunur  ilk sorgu başlangıç anahtarı ile şifrelenir. Diğer sorgular sırasıyla yeni oluşan anahtarla şifrelenir.
 Son satırda şifrelenmiş M değeri verilir.
 
