@@ -1,4 +1,3 @@
-package huprog;
 
 public class hup {
 	public static void setXY(Node node,int[]arr) {
@@ -108,7 +107,7 @@ public class hup {
 		Node temp = root;
 		int arr[] = {2,4,2,1};
 		int arr1[] = {1,2,4};
-		int arr2[] = {1,3};
+		int arr2[] = {1,2};
 		int arr3[] = {3};
 		addChild(10,temp,arr);
 		addChild(20,temp,arr1);

@@ -94,11 +94,11 @@ for i in range(int(input())):
     sinir = int(input())
     number = 1
     while (number != sinir):
-        number = 1
-        olustur(1)
         if i<10:
             out = open("input/input0" + str(i) + ".txt", "w")
         else:
             out = open("input/input" + str(i) + ".txt", "w")
+        number = 1
+        olustur(1)
 
 
