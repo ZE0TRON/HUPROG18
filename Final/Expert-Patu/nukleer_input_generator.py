@@ -16,6 +16,7 @@ for i in range(int(input())):
     N = int(input())
 
     sinir = 10000000
+    gensinir = 20
 
     kok = M ** 0.5
     kok = kok // 1 + 1
@@ -30,8 +31,8 @@ for i in range(int(input())):
     for _ in range(M):
         if _ % 100 == 0:
             print(_)
-        merkezX = randint(xSinir - arttirma + 3, xSinir - 3)
-        merkezY = randint(ySinir - arttirma + 3, ySinir - 3)
+        merkezX = randint(xSinir - arttirma + 30, xSinir - 30)
+        merkezY = randint(ySinir - arttirma + 30, ySinir - 30)
         #print("merkez x ve y", merkezX,merkezY)
         #print("sinir x ve y", xSinir, ySinir)
 
@@ -53,6 +54,8 @@ for i in range(int(input())):
             while True:
                 if (randint(0,99) == 99 and noktaX != merkezX and noktaY != merkezY) or noktaY+1+((ySinir-1-noktaY)//100+1) > ySinir - 1:
                     break
+                if len(xList) >= gensinir:
+                    break
 
                 noktaX = randint(merkezX + 1,xSinir - 1)
                 noktaY = randint(noktaY+1,noktaY+1+((ySinir-1-noktaY)//100+1))
@@ -73,6 +76,8 @@ for i in range(int(input())):
             while True:
                 if (randint(0,99) == 99 and noktaX != kontrolx and noktaY != kontroly) or noktaY-1-((noktaY-1-merkezY)//100+1) < merkezY +1:
                      break
+                if len(xList) >= gensinir:
+                    break
 
                 noktaX = randint(xSinir - arttirma + 1,merkezX -1)
                 noktaY = randint(noktaY-1-((noktaY-1-merkezY)//100+1),noktaY-1)
@@ -85,6 +90,8 @@ for i in range(int(input())):
             #sol taraftan asagi inme
             while True:
                 if (randint(0,99) == 99 and noktaX != merkezX and noktaY != merkezY) or noktaY-1-((noktaY-1-(ySinir-arttirma))//100+1) < ySinir - arttirma + 1:
+                    break
+                if len(xList) >= gensinir:
                     break
 
                 noktaX = randint(xSinir - arttirma + 1, merkezX - 1)
@@ -106,6 +113,8 @@ for i in range(int(input())):
             while True:
                 if (randint(0,99) == 99 and noktaX != kontrolx and noktaY != kontroly) or noktaY+1+((merkezY-1-noktaY)//100+1) > merkezY - 1:
                      break
+                if len(xList) >= gensinir:
+                    break
 
                 noktaX = randint(merkezX + 1,xSinir - 1)
                 noktaY = randint(noktaY+1,noktaY+1+((merkezY-1-noktaY)//100+1))
