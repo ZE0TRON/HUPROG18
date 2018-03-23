@@ -1,9 +1,9 @@
-Sorting algoritmaları üzerinde deney yapan Ze0tron yeni bir şey denemeye karar verir. Verilen sayı dizisini bir k
-sayısına göre şu şekilde sıralamak istemektedir. Sıralanmış dizide her sayının bir basamak değeri vardır. Bu değer en soldaki sayı için 0 dan başlayarak
-k-1 e kadar ilerler k olduğu anda sıfırlanır ve baştan başlar ve son elemana kadar bu şekilde değerler atanır.
-Sizden istenen her sayının basamak değerindeki basamağında bulunan rakamın sağındaki sayının basamak değerinde bulunanan rakamdan küçük veya eşit olmasıdır.
-Birden fazla olası çözüm olması halinde dizideki her sayının puanının (dizideki yeri*basamakdeğeri)'ne eşit olduğunu düşünün.
+Sorting algoritmaları üzerinde deney yapan Ze0tron önceden yaptığı sortu insanların anlamadığına karar verir ve kendini daha iyi ifade etmeye karar verir.
+Verilen sayı dizisini bir k sayısına göre şu şekilde sıralamak istemektedir. Sıralanmış dizide her sayıya ait bir U değeri vardır. Bu değer en soldaki sayı için 0 bir sağındaki sayı için 1 bir sağındaki sayı için 2 şeklinde devam ederek k-1 e kadar ilerler U değeri  k ya eşit olduğunda sıfırlanır sonra tekrar bir sağındaki sayı için 1 ... şeklinde son elemana kadar bu şekilde değerler atanır.
+Sizden istenen her sayının U'ncu basamağında bulunan rakamın , sağındaki sayının U'ncu basamağında bulunanan rakamdan küçük veya eşit olmasıdır.
+Birden fazla olası çözüm olması halinde dizideki her sayının puanının   "  (o sayının dizideki indexi)*(o sayının U değeri)  " 'ne eşit olduğunu düşünün.
 Puanları toplamı en fazla olan diziyi bastırınız.
+Eğer en yüksek puana sahip iki dizi elde edilebiliyorsa. Bu dizilerden sayıların verilen sıranın tersi şeklinde sıralayanı seçiniz.
 
 
 Input Format :
@@ -21,3 +21,21 @@ dizi elde edilemiyorsa -1 bastırınız.
 Constraints:
 1<N<=30
 0<k<10
+
+Example Input:
+1
+10
+3
+8722 0219 4025 1595 9176 4892 9445 7858 5848 6176
+
+Example Output:
+302
+8722 5848 9445 4025 7858 1595 6176 9176 4892 219
+
+Explanation:
+Yukardaki input için
+8722 5848 9445 4025 7858 1595 9176 6176 4892 219
+8722 5848 9445 4025 7858 1595 6176 9176 4892 219
+üstteki iki dizide aynı skoru veriyor ancak  ilk dizide 9176 6176 dan önce geldiği için çıktıda
+6176 nın 9176 dan önce gelmesi gerekiyor o yüzden cevabımız :
+8722 5848 9445 4025 7858 1595 6176 9176 4892 219 oluyor.
