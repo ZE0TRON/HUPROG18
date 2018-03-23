@@ -27,3 +27,51 @@ G X1 -> X'inci rotadan sonraki tüm rotaları iptal eden sorgudur. Burada X = (X
 
 Output Format:
 Ekrana bir şey bastırmanızı isteyen sorguların sonuçlarını ekrana bastırınız.
+
+
+Sample Input1:
+5
+1 2
+2 3
+3 4
+3 5
+5
+T 3 5 20 68
+O 4 5
+O 2 3
+G 0
+O 2 5
+
+
+Sample Output1:
+468
+380
+0
+
+
+Explanation:
+5 tane semtimiz var.
+![image](https://s3.amazonaws.com/hr-assets/0/1521822457-a35816bb1c-1.png)
+İlk sorgumuz T 3 5 20 68<br>
+C = ((C1+U)%N)+1 formulunden C = ((3+0)%5)+1=4<br>
+D = ((D1+U)%N)+1 formulunden D = ((5+0)%5)+1=1<br>
+Bu sorgu sonunda yeni durumlar.
+![image](https://s3.amazonaws.com/hr-assets/0/1521822473-b814b3b5c9-2.png)
+İkinci sorgumuz O 4 5<br>
+C = ((C1+U)%N)+1 formulunden C = ((4+0)%5)+1=5<br>
+D = ((D1+U)%N)+1 formulunden D = ((5+0)%5)+1=1<br>
+Bu sorgu sonunda ekrana 1 ile 5. semtler arası değerler toplanıp ekrana basılır.
+U değeri bu sorgu sonunda değişir.<br> U = 468.<br><br>
+Üçüncü sorgumuz O 2 3<br>
+C = ((C1+U)%N)+1 formulunden C = ((2+468)%5)+1=1<br>
+D = ((D1+U)%N)+1 formulunden D = ((3+468)%5)+1=2<br>
+Bu sorgu sonunda ekrana 1 ile 2. semtler arası değerler toplanıp ekrana basılır.
+U değeri bu sorgu sonunda değişir.<br>U = 380.<br><br>
+Dördüncü sorgumuz G 0<br>
+X = (X1+U)%(Bundan önce rota olusturmak için verilen sorgu sayısı +1) formulunden X = (0+380)+(1+1) = 0<br>
+Bu sorgu sonunda semt değerleri başlangıç haline döner.<br><br>
+Son sorgumuz O 2 5<br>
+C = ((C1+U)%N)+1 formulunden C = ((2+380)%5)+1=3<br>
+D = ((D1+U)%N)+1 formulunden D = ((5+380)%5)+1=1<br>
+Bu sorgu sonunda ekrana 3 ile 1. semtler arası değerler toplanıp ekrana basılır.
+U değeri bu sorgu sonunda değişir.<br>U = 0.
