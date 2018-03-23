@@ -54,7 +54,7 @@ struct point
 };
 
 map<point,int> s;
-map<int,map<point,int>> g;
+map<int,map<point,int> > g;
 
 int m;
 
@@ -81,7 +81,7 @@ struct line
 vector<line> w;
 
 set<int> event;
-map<int,vector<int>> inp,oup;
+map<int,vector<int> > inp,oup;
 
 ld X0;
 
@@ -248,8 +248,8 @@ int MINX,MAXX;
 
 void init()
 {
-    cin>>m;
-    for (int i=1;i<=m;++i)
+    cin>>n;
+    for (int i=1;i<=n;++i)
     {
         int k;
         scanf("%d",&k);
