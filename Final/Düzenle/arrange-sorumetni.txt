@@ -1,0 +1,18 @@
+Dilbilimci Meriç emekli olmuş, ikinci baharında el işlerine merak sarmıştır. İncik boncuğa olan aşkı ve mesleki deformasyonunun sentezi, yazılar içeren takılar üretmesine sebep olmuştur. İngiliz alfabesinin 26 küçük harfini içeren her bir boncuğu, farklı renktedir. Emeklilik Meriç'e pek yaramamış olacak ki, takılarının içerdiği sözcük, mutlaka kendi "Mübarek Sözcük"ünün altsözcüğü olmalıymış. İlginçtir ki kendine müşteriler de bulabilmiştir, bir müşterisine aynı takıdan birden fazla bile satabilmiştir ancak bu satışların sırası önemlidir.
+
+Bazı tasarımlar oldukça benzerdir. Eğer A ve B tasarımları birbirinin çembersel ötelenmişi veya ters çembersel ötelenmişi ise, bu iki tasarım "benzer" kabul edilir. Bu ötelemelere örnek verelim:
+
+Çembersel öteleme: ("m","i","n","n","o","s") ---> ("o","s","m","i","n","n")
+Ters çembersel öteleme: ("b","o","n","c","u","k") ---> ("n","o","b","k","u","c")
+
+Meriç, en çok simetrik tasarımlarını beğenmektedir. Eğer tasarımındaki sözcük palindromikse, o tasarım simetriktir. (Palindromik, sağdan sola ve soldan sağa okunuşu aynı olan dizilerdir). Bundan dolayı düşünmüş taşınmış, bir müşteri için ideal satışın tüm tasarımların simetrikliğiyle sağlanacağına karar vermiştir. Sonrasında, ideal satış sayısının, toplam müşteri sayısından küçük olabileceğini fark etmiştir. Farklı müşterilerine "benzer" kabul ettiği tasarımları da satmak istememektedir. En sonunda Meriç'in asıl amacı, hiçbirinin birbirine "benzer" olmadığı özgün satışların sayısını bulmak olmuştur. Ona yardım edebilir misiniz?
+
+Girdi Formatı:
+İlk satırda S: "Mübarek Sözcük".
+İkinci satırda N: her satışta bulunacak tasarım miktarı.
+
+Sınırlar:
+1<=|S|<=100000
+1<=N<=600
+
+"Mübarek Sözcük", sadece İngiliz alfabesinin küçük harflerini içerecektir.
