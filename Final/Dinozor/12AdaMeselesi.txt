@@ -41,8 +41,10 @@ Sample Output1:
 2
 
 Explanation1:
-İlk olarak 2. semtteki dinozor heykeli 1. semte taşınır. Sonra 3. semtteki dinozor heykeli 2.semte taşınır.
-Toplamda 2 taşıma işlemiyle yeni yol yapmadan istenilen semt değerlerine ulaştık.
+İlk olarak 2. semtteki dinozor heykeli 1. semte taşınır. Sonra 3. semtteki dinozor heykeli 2.semte taşınır.<br>
+Toplamda 2 taşıma işlemiyle yeni yol yapmadan istenilen semt değerlerine ulaştık
+
+![image](https://s3.amazonaws.com/hr-assets/0/1521839361-6c4d91fcb5-yolsuz.png)
 
 
 
@@ -60,13 +62,15 @@ Sample Output2:
 4 6 5
 
 Explanation2:
-4 ve 6 nolu semtler arasına yeni bir yaptıktan sonra.
-Birinci taşıma 2. semtteki dinozor heykeli 1. semte taşındı.
-İkinci taşıma 5. semtteki dinozor heykeli 2. semte taşındı.
-Üçüncü taşıma 4. semtteki dinozor heykeli 5. semte taşındı.
-Dördüncü taşıma 6. semtteki dinozor heykeli 4. semte taşındı.
-Beşinci taşıma 2. semtteki dinozor heykeli 6. semte taşındı.
+4 ve 6 nolu semtler arasına yeni bir yaptıktan sonra.<br>
+Birinci taşıma 2. semtteki dinozor heykeli 1. semte taşındı.<br>
+İkinci taşıma 5. semtteki dinozor heykeli 2. semte taşındı.<br>
+Üçüncü taşıma 4. semtteki dinozor heykeli 5. semte taşındı.<br>
+Dördüncü taşıma 6. semtteki dinozor heykeli 4. semte taşındı.<br>
+Beşinci taşıma 2. semtteki dinozor heykeli 6. semte taşındı.<br>
 Toplamda 5 taşıma sonunda istenilen semt değerlerine 4 ve 6 nolu semtler arasına yeni yol yaparak ulaşmış olduk.
+
+![image](https://s3.amazonaws.com/hr-assets/0/1521839394-f06ad13b33-yolYaptik.png)
 
 
 Sample Input3:

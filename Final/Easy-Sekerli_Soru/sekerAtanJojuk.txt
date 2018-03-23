@@ -1,10 +1,10 @@
-Okan okula giderken eline cebine atar ve N tane şeker olduğunu farkeder.
-Ve bu şekerlerin bir kısmını yiyip bir kısmını arkadaşlarına dağıtmaya karar verir.
-Ancak kendisi okulda çok adil bir insan olarak tanındığı için dağıtacağı her arkadaşına
-eşit sayıda şeker vermek zorundadır. Bunu kaç farklı şekilde yapabilir ?
+Simay okula giderken elini cebine atar ve N tane şekeri olduğunu fark eder. Bu şekerlerin bir kısmını yiyip kalanını arkadaşlarına dağıtmaya, ya da hiç yemeyip tamamını arkadaşlarına dağıtmaya karar verir. Ancak okulda çok adil biri olarak tanınan Simay, her arkadaşına eşit sayıda şeker dağıtmak zorundadır. Bunu kaç farklı şekilde yapabilir?
+
 
 Not :
-İstediği sayıda şeker yiyebilir ve istediği sayıda arkadaşına dağıtabilir seçebilir.
+İstediği sayıda şeker yiyebilir ve istediği sayıda arkadaşına şekerleri dağıtabilir.
+
+
 
 Input Format :
 N şeker sayısı.
@@ -14,7 +14,7 @@ Constraints
 
 
 Output Format:
-Şekerleri kaç farklı şekilde dağıtabileceği.
+Şekerleri kaç farklı şekilde dağıtabileceği yazdırınız.
 
 
 Sample Input
@@ -29,10 +29,11 @@ Sample Output
 Explanation
 
 Okanın 3 şekeri var.
-1- Hepsini kendi yer
-2- 1 tanesini kendi yer 2 tanesini 1 arkadaşına verir
-3- 1 tanesini kendi yer 2 tanesini 2 farklı arkadaşına verir
-4- 2 tanesini kendi yer 1 tanesini arkadaşına verir
-5- Hiçbirini kendi yemez 3 tanesini 1 arkadaşına verir.
-6- Hiçbirini kendi yemez 3 tanesini 3 arkadaşına verir.
-Toplam 6 farklı yol
+1- Hepsini kendi yer.
+2- 1 tanesini kendi yer, 2 tanesini 1 arkadaşına verir.
+3- 1 tanesini kendi yer, 2 tanesini 2 farklı arkadaşına verir.
+4- 2 tanesini kendi yer, 1 tanesini arkadaşına verir.
+5- Hiçbirini yemez, 3 tanesini 1 arkadaşına verir.
+6- Hiçbirini yemez, 3 tanesini 3 arkadaşına verir.
+
+Toplam 6 farklı şekilde adilce dağıtabilir.

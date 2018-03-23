@@ -95,9 +95,9 @@ for i in range(n):
     number = 1
     while (number != sinir):
         if i<10:
-            out = open("input/input" + str(i+26) + ".txt", "w")
+            out = open("input/input0" + str(i) + ".txt", "w")
         else:
-            out = open("input/input" + str(i+26) + ".txt", "w")
+            out = open("input/input" + str(i) + ".txt", "w")
         print(sinir,file=out)
         number = 1
         olustur(1)
