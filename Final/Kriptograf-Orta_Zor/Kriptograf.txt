@@ -10,10 +10,9 @@ Not: Her sorguda verilen sayılar ayrı ayrı şifrelenecektir.
 
 Sonunda ise en son satırda  verilen bir şifrelenmiş sayının gerçek değerini hesaplamanız istenmektedir.
 
-3 tip sorgu vardır :
+2 tip sorgu vardır :
 1) 1 x şeklindeki sorguda x düğümü çizgeye eklenir.(Ancak herhangi bir düğüme bağlanmaz)
-2) 2 x şeklindeki sorguda x düğümü ve x düğümüne bağlı kenarların hepsi çizgeden silinir.
-3) 3 x y şeklindeki sorguda x ve y düğümü arasında bir kenar olusturulur.
+2) 3 x y şeklindeki sorguda x ve y düğümü arasında bir kenar olusturulur.
 
 Input Format :
 İlk satırda düğüm sayısı  N ve kenar sayısı E sayısı boşluklarla ayrılmış şekilde verilecektir.
