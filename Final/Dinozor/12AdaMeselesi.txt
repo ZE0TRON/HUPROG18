@@ -14,7 +14,7 @@ aldığında Torpak'a geri dönüş yapıcaktır. Bu konuda Simay'a yardım eder
 
 input Formatı:
 ilk satır N sayısını vericek.
-sonraki N-1 satır bağlantıları
+sonraki N-1 satır semtler arasındaki 4 şeritli duble yollar.x y şeklinde
 sonraki satır ze0city'deki semtlerin şuanki değerleri
 sonraki satırda Torpak'ın istediği  semt değerleri.
 
@@ -22,9 +22,9 @@ sonraki satırda Torpak'ın istediği  semt değerleri.
 output format:
 Simay 3 farklı geri dönüş yapabilir.
 İlki dinozor heykellerini diğer semtlere taşınması imkansız ise çıktı "i" şeklinde olucak
-ikincisi yeni yol yapmadan taşıyabilirsin. Çıktı "t" şeklinde olucak ve  t, toplam heykel yer değiştirme sayısı.
-üçüncüsü ise yeni yol yaparak taşınanlar. Çıktı "x y t" şeklinde. x ve y yeni yolun hangi iki semt arasına koyduğun. t ise
-ikinci çıktı formatında olduğu gibi tolam heykel yer değiştirme sayısı. ( x < y )
+ikincisi yeni yol yapmadan taşıyabilirsin. Çıktı "t" şeklinde olucak ve  t, toplam dinozor heykeli yer değiştirme sayısı.
+üçüncü ise yeni yol yaparak taşınanlar. Çıktı "x y t" şeklinde. x ve y yeni yolun hangi iki semt arasına koyduğun. t ise
+ikinci çıktı formatında olduğu gibi tolam dinozor heykeli yer değiştirme sayısı. ( x < y )
 
 
 Sample Input1:

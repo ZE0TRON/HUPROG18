@@ -4,7 +4,7 @@ inputs = os.listdir("./input")
 for inp in inputs:
     inputfile = open("input/" + inp, "r")
     number = inp[5:]
-    out = open("abc/output" + number , "w+")
+    out = open("grap/gra" + number , "w+")
     print("digraph G{",file=out)
     N = int(inputfile.readline())
     dizi=[]
