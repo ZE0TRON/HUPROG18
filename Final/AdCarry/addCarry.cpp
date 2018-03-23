@@ -1,8 +1,11 @@
 #include <iostream>
 #include <vector>
-#include <stdio.h>
-#include <ctime>
 #include <algorithm>
+#include <stdio.h>
+#include <fstream>
+#include <sstream>
+#include <dirent.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 #define maxn 220000 // maximal number of nodes
@@ -109,8 +112,9 @@ void addedge(int x,int y){ // add an edge to the tree
 int ex[maxn],ey[maxn],o[maxn];
 
 void readIn(){
-    scanf("%d%d",&n,&m); // amount of vertices and queries
+    scanf("%d",&n); // amount of vertices and queries
     for(i=1;i<n;i++)scanf("%d%d",&ex[i],&ey[i]);
+    scanf("%d",&m);
     for(i=1;i<n;i++)o[i]=i;
     for(i=1;i<n;i++){
         j=rand()%(n-1)+1;
@@ -240,7 +244,6 @@ long long query(int L,int x,int y){ // more general case for quetion query
     long long ret=getsum(x,L); // [x; L]
     int pL=y,remain=depth[y]-depth[L]-1;
     for(j=19;j+1;j--)if(remain&(1<<j))pL=up[pL][j];
-    printf("BURA ret%lld x%d L%d y%d pL%d remai%d  gets%lld ",ret,x,L,y,pL,remain,getsum(y,pL));
     return ret+getsum(y,pL); // [y; L)
 }
 
@@ -253,80 +256,59 @@ void upd_changed(){ // write all the updates in the persistent array
 
 int used[maxn],visited;
 
-int main (int argc, char * const argv[]) {
-    srand(time(NULL));
-    readIn(); // read data
-    build_dot(); // build the decomposition
-    changeRoot[0]=initInfNode(1,chains); // build the version 0 of the persistent array
-    for(i=1,changes=0,ver=0;i<=m;i++){
-        ch[i]=getchar(); // get the type of the query
-        while(ch[i]!='c'&&ch[i]!='q'&&ch[i]!='l')ch[i]=getchar(); // get the type of the query
-        changing=false;
-        if(ch[i]=='c'){ // changing query
-            scanf("%d%d%d%d",&X[i],&Y[i],&AA[i],&BB[i]);
-            X[i]=(X[i]+lastans)%n+1; // get actual X
-            Y[i]=(Y[i]+lastans)%n+1; // get actual Y
-            pr[++changes]=ver;
-            changeRoot[changes]=new infNode; // create a new node in versions tree
-            changeRoot[changes]=changeRoot[ver]; // create a new node in versions tree
-            changing=true;
-            x=X[i],y=Y[i],aa=AA[i],bb=BB[i];
-            L=LCA(x,y); // get LCA
-            chg.clear();
-            change(L,x,y,aa,bb); // do the change
-            upd_changed(); // update persistent array
-            ver=changes; // update the current version's index
-            ++modifies;
-            //printf("%lld\n",query(LCA(1,5),1,5));
-        }else if(ch[i]=='q'){
-            scanf("%d%d",&X[i],&Y[i]);
-            X[i]=(X[i]+lastans)%n+1; // get actual X
-            Y[i]=(Y[i]+lastans)%n+1; // get actual Y
-            x=X[i],y=Y[i];
-            L=LCA(x,y); // get LCA
-            lastans=query(L,x,y); // answer the query
-            printf("%lld\n",lastans);
-        }else if(ch[i]=='l'){
-            scanf("%d",&X[i]);
-            X[i]=(X[i]+lastans)%(modifies+1); // get actual version
-            ver=X[i];
-            go_back=changes;
-        }
+vector<string> GetDirectoryFiles(const string& dir) {
+    vector<string> files;
+    shared_ptr<DIR> directory_ptr(opendir(dir.c_str()), [](DIR* dir){ dir && closedir(dir); });
+    struct dirent *dirent_ptr;
+    if (!directory_ptr) {
+        cout << "Error opening : " << strerror(errno) << dir << endl;
+        return files;
     }
-    return 0;
+    int i=0;
+    while ((dirent_ptr = readdir(directory_ptr.get())) != nullptr) {
+        if(i++>1)
+            files.push_back(string(dirent_ptr->d_name));
+    }
+    return files;
 }
 
-/*
-
-5 7
-1 2
-2 3
-3 4
-4 5
-c 1 4 2 3
-c 2 3 5 10
-q 1 3
-l 2
-q 1 3
-l 1
-q 1 3
-
-
-5 7
-2 5
-1 3
-1 4
-3 4
-c 1 4 2 3
-c 2 3 5 10
-q 1 3
-l 1
-q 1 3
-l 1
-q 1 3
-
-
-
-
- */
-
+int main (int argc, char * const argv[]) {
+        readIn(); // read data
+        build_dot(); // build the decomposition
+        changeRoot[0] = initInfNode(1, chains); // build the version 0 of the persistent array
+        for (i = 1, changes = 0, ver = 0; i <= m; i++) {
+            ch[i] = getchar(); // get the type of the query
+            while (ch[i] != 'T' && ch[i] != 'O' && ch[i] != 'G')ch[i] = getchar(); // get the type of the query
+            changing = false;
+            if (ch[i] == 'T') { // changing query
+                scanf("%d%d%d%d", &X[i], &Y[i], &AA[i], &BB[i]);
+                X[i] = (X[i] + lastans) % n + 1; // get actual X
+                Y[i] = (Y[i] + lastans) % n + 1; // get actual Y
+                pr[++changes] = ver;
+                changeRoot[changes] = new infNode; // create a new node in versions tree
+                changeRoot[changes] = changeRoot[ver]; // create a new node in versions tree
+                changing = true;
+                x = X[i], y = Y[i], aa = AA[i], bb = BB[i];
+                L = LCA(x, y); // get LCA
+                chg.clear();
+                change(L, x, y, aa, bb); // do the change
+                upd_changed(); // update persistent array
+                ver = changes; // update the current version's index
+                ++modifies;
+            } else if (ch[i] == 'O') {
+                scanf("%d%d", &X[i], &Y[i]);
+                X[i] = (X[i] + lastans) % n + 1; // get actual X
+                Y[i] = (Y[i] + lastans) % n + 1; // get actual Y
+                x = X[i], y = Y[i];
+                L = LCA(x, y); // get LCA
+                lastans = query(L, x, y); // answer the query
+                printf("%lld\n", lastans);
+            } else if (ch[i] == 'G') {
+                scanf("%d", &X[i]);
+                X[i] = (X[i] + lastans) % (modifies + 1); // get actual version
+                ver = X[i];
+                go_back = changes;
+            }
+        }
+    return 0;
+}
