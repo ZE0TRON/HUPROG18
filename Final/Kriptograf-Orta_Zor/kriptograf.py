@@ -44,13 +44,7 @@ for i in range(Q):
         b = int(d[1])
         b = solve(b, P)
         graph[b] = []
-    if (a == 2):
-        b = int(d[1])
-        b = solve(b, P)
-        for elem in graph[b]:
-            graph[elem].remove(b)
-        graph[b] = []
-    if (a == 3):
+    elif (a == 2):
         b = int(d[1])
         b = solve(b, P)
         c = int(d[2])
