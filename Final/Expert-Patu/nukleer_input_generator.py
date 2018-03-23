@@ -16,7 +16,8 @@ for i in range(int(input())):
     N = int(input())
 
     sinir = 10000000
-    gensinir = 20
+    gensinir = 200000//M -1
+    #print(gensinir)
 
     kok = M ** 0.5
     kok = kok // 1 + 1
@@ -24,13 +25,15 @@ for i in range(int(input())):
 
     xSinir = arttirma
     ySinir = arttirma
+    toplam = 0
 
     #ulke olusturucu
 
     print(M,file=out)
     for _ in range(M):
         if _ % 100 == 0:
-            print(_)
+            pass
+            #print(_)
         merkezX = randint(xSinir - arttirma + 30, xSinir - 30)
         merkezY = randint(ySinir - arttirma + 30, ySinir - 30)
         #print("merkez x ve y", merkezX,merkezY)
@@ -125,6 +128,7 @@ for i in range(int(input())):
         #dosyaya datalari yazma
         #print("data yaziyom")
         print(len(xList),file=out)
+        toplam += len(xList)
         for p in range(len(yList)):
             print(xList[p],yList[p],end=" ",file=out)
         print(file=out)
@@ -137,7 +141,7 @@ for i in range(int(input())):
             xSinir += arttirma
 
     #roket olusturucu
-
+    print(toplam)
     print(N,file=out)
     #print("roket olusturuyom")
 
