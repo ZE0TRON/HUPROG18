@@ -24,3 +24,6 @@ O C1 D1 -> C ile D arasındaki tüm semtlerin değerli toplamını hesaplamanız
 Burada C = ((C1+U)%N)+1  ve D= ((D1+U)%N)+1 dir.
 
 G X1 -> X'inci rotadan sonraki tüm rotaları iptal eden sorgudur. Burada X = (X1+U)%(Bundan önce rota olusturmak için verilen sorgu sayısı +1) dir.
+
+Output Format:
+Ekrana bir şey bastırmanızı isteyen sorguların sonuçlarını ekrana bastırınız.
