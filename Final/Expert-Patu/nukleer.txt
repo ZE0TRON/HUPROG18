@@ -18,7 +18,7 @@ Input format:
 Takip eden M*2 satırda;
 L nokta sayısı
 Bir sonraki satırda boşluklarla ayrılmış şekide L adet nokta(her bir nokta x ve y değerine sahiptir ve bunlar da boşluklarla birbirinden ayrılmıştır.),
-Sonraki satırda M adet roket sayısı
+Sonraki satırda N adet roket sayısı
 Takip eden N satırda;
 x y roketin düşeceği koordinat çifti verilecektir.
 
