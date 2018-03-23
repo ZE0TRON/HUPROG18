@@ -15,7 +15,7 @@ for i in range(int(input())):
     liste = []
     derinlik = 1
     nerdeyim = 1
-    memory = [1]
+    memory = []
 
 
     num = n
@@ -23,28 +23,26 @@ for i in range(int(input())):
     while num > 1:
         num /= 4
         derinlikLim +=1
-
+    for _1 in range(derinlikLim):
+        memory.append(1)
     print(n,file=out)
 
     for _ in range(n):
         weight = randint(1,1000000)
-        if memory[len(memory) - 1] == 5:
-            if len(memory) == derinlikLim:
-                memory.pop()
-                while memory[len(memory) - 1] == 4:
-                    memory.pop()
-                memory[len(memory) - 1] += 1
-                memory.append(1)
-            else:
-                memory[len(memory) - 1] = 1
-                memory.append(1)
-
+        nerde = len(memory)-1
+        while memory[nerde] == 5:
+            memory[nerde] = 1
+            if nerde > 0:
+                memory[nerde-1]+=1
+            nerde-=1
+        print(memory)
         data = [weight]
         data.append(len(memory))
         for i in memory:
             data.append(i)
         liste.append(data)
         memory[len(memory) - 1] += 1
+
 
     shuffle(liste)
     for elem in liste:
