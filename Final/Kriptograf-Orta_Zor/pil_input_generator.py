@@ -123,6 +123,10 @@ for i in range(int(input())):
     print(i, " graph sinirini(minimum 5) giriniz:")
     sinir = int(input())
     number = 1
+    if i < 10:
+        out1 = open("output/output0" + str(i) + ".txt", "w")
+    else:
+        out1 = open("output/output" + str(i) + ".txt", "w")
     while (number != sinir):
         if i < 10:
             out = open("input/input0" + str(i) + ".txt", "w")
@@ -160,11 +164,13 @@ for i in range(int(input())):
     print(P, Q, U, K, file=out)
     N = node
     slinenler = [0]
+
+
     for i in range(Q):
-        a = randint(1, 3)
+        a = randint(1, 2)
         b = randint(1, N - 1)
         c = randint(1, N - 1)
-        while b == c and b in slinenler:
+        while b == c or b in slinenler:
             b = randint(1, N - 1)
             c = randint(1, N - 1)
         if (a == 1):
@@ -172,19 +178,7 @@ for i in range(int(input())):
             graph[b] = []
             b = solve(b, P)
             print(str(a) + " " + str(b),file=out)
-        if (a == 2):
-            a = solve(a, P)
-            print("b: ", b)
-            print(graph[b])
-            for elem in graph[b]:
-                print(elem)
-                print(graph[elem])
-                graph[elem].remove(b)
-            slinenler.append(b)
-            graph[b] = []
-            b = solve(b, P)
-            print(str(a) + " " + str(b),file=out)
-        if (a == 3):
+        elif (a == 2):
             a = solve(a, P)
             graph[b].append(c)
             graph[c].append(b)
@@ -193,5 +187,6 @@ for i in range(int(input())):
             print(str(a) + " " +str(b) + " " + str(c),file=out)
         P = generateNewKey()
     M = randint(0, N * 100)
+    print(M,file=out1)
     M = solve(M, P)
     print(M,file=out)
