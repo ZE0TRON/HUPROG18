@@ -174,6 +174,8 @@ for i in range(int(input())):
             b = randint(1, N - 1)
             c = randint(1, N - 1)
         if (a == 1):
+            b = node + 1 + randint(1, 10)
+            node = b
             a = solve(a, P)
             graph[b] = []
             b = solve(b, P)
